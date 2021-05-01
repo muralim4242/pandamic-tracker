@@ -1,0 +1,1348 @@
+{
+  "logoUrl": "/assets/images/group-4.svg",
+  "menus": [
+    {
+      "label": "Home",
+      "route": "/user-home/home",
+      "pageInfo": {
+        "banner": {
+          "header": "Empowering farms with integration",
+          "subHeader": "At Hasiru Naadu, we believe farmlands can change the world, through high value agroforestry and intercropping designed by and for local community and reaping great benefits to farm owners, thus regenerating, restoring & preserving ecosystem, benefiting soil, water, climate & biodiversity.",
+          "buttonText": "Sign Up",
+          "hasButton": true,
+          "backgroundUrl": "https://firebasestorage.googleapis.com/v0/b/hasirunaadu-13736.appspot.com/o/hasiru-naadu-images%2Fbanner_compressed.jpeg?alt=media&token=90d42358-bb2b-4d05-8e33-a6f6fef16b8e"
+        },
+        "join": {
+          "header": " Join our community and convert your farmland to green gold.",
+          "steps": [
+            {
+              "imageUrl": "/assets/images/undraw-my-app-grf-2.svg",
+              "header": "Sign-Up",
+              "subHeader": "Sign up for Hasiru Naadu account & gain access to personal profile of your farmland"
+            },
+            {
+              "imageUrl": "/assets/images/undraw-map-1-r-69.svg",
+              "header": "Know your farmland",
+              "subHeader": "Determine what type of intersetting fits your farm to get highest possible returns"
+            },
+            {
+              "imageUrl": "/assets/images/undraw-not-found-60-pq.svg",
+              "header": "Monitor",
+              "subHeader": "You can monitor your farm at the luxury of your home while Hasiru Naadu manages from planting to harvesting to selling"
+            },
+            {
+              "imageUrl": "/assets/images/undraw-winners-ao-2-o.svg",
+              "header": "Collect Rewards",
+              "subHeader": "Collect profits from the harvest at the end of the holding period"
+            }
+          ]
+        },
+        "why_invest": {
+          "header": " Why Invest In Farmland ",
+          "steps": [
+            " More stable than stock markets ",
+            " Benefits generations to come ",
+            " Earn profits through crops harvested ",
+            " High returns from land appreciation",
+            " Hedge against inflation ",
+            " Social & economic benefits ",
+            " Tax benefits ",
+            " Helps environment"
+          ],
+          "imageUrl": "https://firebasestorage.googleapis.com/v0/b/hasirunaadu-13736.appspot.com/o/hasiru-naadu-images%2Fimage_two_compressed.jpeg?alt=media&token=3709100f-a4a0-4b2a-8ea9-cd0f39a04a43"
+        },
+        "what_makes_us_different": {
+          "header": "What Makes Us Different ",
+          "backgroundUrl": "https://firebasestorage.googleapis.com/v0/b/hasirunaadu-13736.appspot.com/o/hasiru-naadu-images%2Fbanner_compressed.jpeg?alt=media&token=90d42358-bb2b-4d05-8e33-a6f6fef16b8e",
+          "steps": [
+            {
+              "imageUrl": "/assets/images/why_invest_briefmore_1/bitmap.svg",
+              "hasImageRight": true,
+              "header": "Farmer Owned",
+              "subHeader": "Hasiru Naadu works on land owned by farmers themselves and manages & develops to maximize return on farmland."
+            },
+            {
+              "imageUrl": "/assets/images/why_invest_briefmore_2/bitmap.svg",
+              "header": " Asset Management Experts ",
+              "hasImageRight": false,
+              "subHeader": "Hasiru Naadu management has a proven track record in developing and managing farmland. Our custom structure investment advice, help farm owners to make the right choice."
+            },
+            {
+              "imageUrl": "/assets/images/why_invest_briefmore_3/bitmap@2x.svg",
+              "header": "Integration",
+              "hasImageRight": true,
+              "subHeader": "Different agroforestry models with trees integrated in the perimeter of fields, intercropped, or at landscape level will deliver a mix a various ecosystem services for the farmers."
+            }
+          ]
+        },
+        "our_live_projects": {
+          "header": "Our live projects",
+          "videos": [
+            {
+              "id": 1,
+              "url": "https://youtu.be/v1DT4yvxpMw.mp4",
+              "description": "Vision of Agroforestry and Agriculture with latest Technology"
+            },
+            {
+              "id": 2,
+              "url": "https://youtu.be/HOD6yqCejYk",
+              "description": "Vision of Agroforestry and Agriculture with latest Technology"
+            },
+            {
+              "id": 3,
+              "url": "https://m.youtube.com/watch?v=uirMQDdW4-c&feature=youtu.be",
+              "description": "Vision of Agroforestry and Agriculture with latest Technology"
+            }
+          ]
+        },
+        "our_live_counts": {
+          "counts": [
+            {
+              "header": "2",
+              "subHeader": "Live Projects",
+              "background": "#46c676"
+            },
+            {
+              "header": "50",
+              "background": "#bb7f2d",
+              "subHeader": "Acres of land cultivated"
+            },
+            {
+              "header": "22000",
+              "background": "#c2c455",
+              "subHeader": "No. of saplings planted"
+            }
+          ]
+        },
+        "testimonials": {
+          "header": " Hasiru Naadu in Media ",
+          "media": [
+            {
+              "header": "Testimonials",
+              "descriptions": [
+                "I am impressed with the Initiative and Venture of HASIRUNAADU. "
+              ],
+              "author": "Dr. Kiran Malli , Orthopedic Surgeon, Abu Dhabi"
+            },
+            {
+              "header": "Testimonials",
+              "descriptions": [
+                "Farm investment is a safe option for parking one's funds as the return on investment is usually higher than other investments and also lends safety to investors' money.",
+                "HASIRUNAADU is extremely diligent is handling my investment and trusting their conviction will be extremely glad to support the Venture."
+              ],
+              "author": "Mr. Hariprasad Hegde, Industrialist, Mumbai"
+            },
+            {
+              "header": "Testimonials",
+              "descriptions": [
+                "Hasirunaadu convinced me Farm Land investments can produce high returns, passive income, and large profit margins and also my little payback to my Mother Earth and my country for the future generations."
+              ],
+              "author": "Dr. Mrs. Gayatri Joshi , Gynecologist , USA"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "About",
+      "route": "/user-home/about-us",
+      "pageInfo": {
+        "header": "About Hasiru Naadu",
+        "subHeader": "Hasiru Naadu provides comprehensive services to implement insetting programs for investors. These services include:",
+        "imageUrl": "assets/images/hasirunadu_about_us_image.svg",
+        "items": [
+          {
+            "id": 1,
+            "header": "Assessment",
+            "content": "Evaluate soil health, Projects for feasibility, relevance and    appropriateness, Water availability, Species for specific climatic conditions etc."
+          },
+          {
+            "id": 2,
+            "header": "Design & Implementation",
+            "content": "Regenerate ecosystems and provide livelihood benefits to local populations through the design and implementation of integrated positive impact projects."
+          },
+          {
+            "id": 3,
+            "header": "Monitoring, Valuation & Communication",
+            "subContent": "The comprehensive nature of our services ensures the consistency and efficacy of our Insetting program management. These services can be provided independently or as an entire program.  "
+          }
+        ],
+        "ourStory": {
+          "header": "Our Story",
+          "content": "Akshaya & Sushma , both master degree holders and entrepreneurs, worked for almost 15 years away from motherland. Though all was good, something was still missing. Both had passion for agriculture and loved farming. Hence started Hasiru Naadu as a sapling. The need to make a difference and get connected to nature, and constant encouragement from family & friends, Hasiru Naadu started to grow as a huge tree. Now Hasiru Naadu is sealing new heights and providing high productive and profitable yields to existing farm owners and farming aspirants."
+        }
+      }
+    },
+    {
+      "label": "Services",
+      "route": "/user-home/services",
+      "pageInfo": {
+        "header": "Manage Agri Assets – The ART of integration",
+        "paragraph": "Agroforestry is the smart integration of trees into farming systems. Unlike full-sun fields, vulnerable and contributing to ecosystems degradation, agroforestry is a way to preserve productive ecosystems and adapt to climate change. Different agroforestry models with trees integrated in the perimeter of fields, intercropped, or at landscape level will deliver a mix of various opportunity for farmland owners.",
+        "paragraph1": "Our experienced team and farm manager will help you structure a custom investment that has high profit potential, matches your risk tolerance and helps you reach your personal investment goals. Let us know what commodities you are interested in growing and we will advise you on which we think will be most profitable and manage the farm, using state of the art equipment, turnkey solutions, modern irrigation systems, precision planting of saplings, management of  human resources effectively, smart water management, plant protection, plant nutrition etc. This is a truly customized investment that will be designed for you and managed by our expert farm manager.",
+        "items": [
+          {
+            "id": 1,
+            "imageUrl": "assets/images/hasirunadu_services_img_1.svg",
+            "header": "Plan & design Farmlands",
+            "content": "Our expert farm manager, will take a tour of your farmland, get to know the climatic conditions and geography, check the soil health, the water source availability and depending on your personal risk tolerance, annual cash return goals and desired holding period, and after undergoing rigorous testing process we will help you plan & design your farm that fits your criteria and meets your desired return percentage."
+          },
+          {
+            "id": 2,
+            "imageUrl": "assets/images/hasirunadu_services_img_2.svg",
+            "header": "Marketing Produce",
+            "content": "We help farmland owners to sell their produce at the right time, at optimal price, giving farm owners satisfied returns on their investments."
+          },
+          {
+            "id": 3,
+            "imageUrl": "assets/images/hasirunadu_services_img_3.svg",
+            "header": "Find Investments or Farms",
+            "content": "If you are a farmland owner of a farm land, and would wish to find investment to grow on your farm land, we connect you to investors interested in farmlands.If you are a farmland aspirant, and wish to buy a farmland, that you want us to manage, we connect you to farmland owners that wish to sell to you."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Blog",
+      "route": "/user-home/blog",
+      "pageInfo": {
+        "blogs": [
+          {
+            "header": "The Future of Agriculture",
+            "comment": "As per estimates by the United Nations, by 2050 approximately 9.5 billion people will inhabit the world. How can all these people be fed, given that the amount of farmland available per capita is decreasing day by day? To address this pressing issue, agriculture requires new approaches, which can not only increase productivity but also ensure environmental protection and conservation of limited natural resources. If we were to take a look at the future, there are already a few trends that are transforming agriculture globally.",
+            "showmore": "Show more",
+            "imageUrl": "assets/images/blogs/image1.png",
+            "date": "by Sudham on 20 Jan 2020",
+            "fullDescriptions": [
+              {
+                "heading": "The Future of Agriculture",
+                "descriptions": [
+                  {
+                    "pointLabel": "As per estimates by the United Nations, by 2050 approximately 9.5 billion people will inhabit the world. How can all these people be fed, given that the amount of farmland available per capita is decreasing day by day?"
+                  },
+                  {
+                    "pointLabel": "To address this pressing issue, agriculture requires new approaches, which can not only increase productivity but also ensure environmental protection and conservation of limited natural resources. If we were to take a look at the future, there are already a few trends that are transforming agriculture globally."
+                  }
+                ],
+                "date": "by Sudham on 20 Jan 2020"
+              },
+              {
+                "heading": "Augmenting Hybridization",
+                "descriptions": [
+                  {
+                    "pointLabel": "The use of hybrid seeds enables better adaptation in unfavorable soil and climatic conditions such as saline soils and rainfed ecosystems. Short duration hybrids produce more in less duration and thus consume less water. Hybrid seeds with inbuilt quality can provide additional disease tolerance which reduces chemical use on plant and minimizes residue level of chemicals in soil and water."
+                  }
+                ]
+              },
+              {
+                "heading": "Smart Farming",
+                "descriptions": [
+                  {
+                    "pointLabel": "With 11 agro-climatic zones, India has varying cultivation practices, this technology can really help farmers increase farm output. Precision farming technologies can help eliminate uncertainty  or at least further reduce risks by providing accurate weather data via connected hardware like GPS-equipped sensors. The information collected can be analyzed to gather appropriate agronomic analysis by which farmers can then make farm-zone-specific decisions."
+                  }
+                ]
+              },
+              {
+                "heading": "Sensor Based Drip Irrigation",
+                "descriptions": [
+                  {
+                    "pointLabel": "Agriculture accounts for 70% of all water usage and needs to focus on improving water quality and also address water scarcity. The joint cooperation of German life science enterprise Bayer, Israeli irrigation solutions company Netafim and BGN Technologies, the technology company of Israel’s Ben-Gurion University of the Negev (BGU),  aims to combine soil research, digital prediction tools and drip technology to calibrate digital prediction models for optimized application of crop protection compounds through drip irrigation."
+                  },
+                  {
+                    "pointLabel": "This method uses sensors and technology to precisely deliver water and targeted crop protection treatments based on specific geographic needs, pest and disease pressures as well as plant life cycle requirements. This in turn also contributes in economic savings for farmers."
+                  }
+                ]
+              },
+              {
+                "heading": "Drones/Robots In Agriculture",
+                "descriptions": [
+                  {
+                    "pointLabel": "In addition to mapping the cropping area, these gadgets may also be able to process answers, sounds exciting isn’t it? Need based application of agrochemicals by identifying the weeds, pests, diseases and their types. Drones are completely changing the entire process of farming world over. As per industry estimates, the use of drones can provide a 15 to 20 percent increase in farm productivity."
+                  }
+                ]
+              },
+              {
+                "heading": "Managing Soil Health",
+                "descriptions": [
+                  {
+                    "pointLabel": "Soil health is turning out to be the next frontier in farming. While we know the benefits of reduced tillage in preserving soils and preventing erosion and moisture loss, we are still in our infancy regarding the complexities of the soil biome."
+                  },
+                  {
+                    "pointLabel": "Bayer’s new global partnership with Ginkgo Bioworks by the name Joyn Bio is a joint venture of the two companies for R &D activities in soil health management that is to be achieved  by identifying and developing plant-based microbes that can help plants and soil to fix nitrogen from the air or other alternative sources as a means to reduce the need to apply traditional nitrogen fertilizers in agricultural production."
+                  },
+                  {
+                    "pointLabel": "Nitrogen fertilizers are not only costly to the farmers but are also costly to the environment, causing ever-more concerning water pollution through run-off, and accounting for 3 percent of the world’s carbon emissions, according to Forbes.  If successful, this research could reduce the cost of crop fertilization and runoff into waterways while cutting down greenhouse gas emissions."
+                  }
+                ]
+              },
+              {
+                "heading": "Digitalization",
+                "descriptions": [
+                  {
+                    "pointLabel": "In the present time the idea of driverless cars does not sounds fancy as it is increasingly becoming popular, but this technology will likely be even more quickly adopted in agriculture. 24/7 farming would be possible by Self-driving tractors, drones and robots guided by a farmer’s phone or tablet during critical times of the season."
+                  },
+                  {
+                    "pointLabel": "And the integration of artificial intelligence, satellite imagery and sophisticated predictive software will help farmers make key decisions in real time, saving time, money and maybe even a crop from the devastating impact of pests or extreme weather."
+                  },
+                  {
+                    "pointLabel": "In the present time the idea of driverless cars does not sounds fancy as it is increasingly becoming popular, but this technology will likely be even more quickly adopted in"
+                  },
+                  {
+                    "pointLabel": "agriculture. 24/7 farming would be possible by Self-driving tractors, drones and robots guided by a farmer’s phone or tablet during critical times of the season."
+                  },
+                  {
+                    "pointLabel": "And the integration of artificial intelligence, satellite imagery and sophisticated predictive software will help farmers make key decisions in real time, saving time, money and maybe even a crop from the devastating impact of pests or extreme weather."
+                  },
+                  {
+                    "pointLabel": "All these trends will help in raising farmer income and also help minimize distribution losses that have plagued Agri space for decades."
+                  },
+                  {
+                    "pointRefLabel": "https://scholarstree.com/future-of-agriculture-new-trends-in-agriculture-2021/"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "header": " AGRITECH START-UPS",
+            "comment": "More than half of India’s population depends on agriculture as a primary source of livelihood. The agricultural sector contributes ~20% to the national GDP. The export market for agricultural products is vast; agricultural product exports amounted to Rs. 2,84,000 crore (US$ 38.54 billion) in FY19-20. India is the largest producer, consumer and exporter of spices in the world. According to the Department for Promotion of Industry and Internal Trade (DPIIT), a cumulative Foreign Direct Investment (FDI) equity inflow of about Rs. 67,000 crore",
+            "showmore": "Show more",
+            "imageUrl": "assets/images/blogs/image2.jpg",
+            "date": "by Sudham on 20 Jan 2020",
+            "fullDescriptions": [
+              {
+                "heading": "Overview",
+                "descriptions": [
+                  {
+                    "pointLabel": "More than half of India’s population depends on agriculture as a primary source of livelihood. The agricultural sector contributes ~20% to the national GDP. The export market for agricultural products is vast; agricultural product exports amounted to Rs. 2,84,000 crore (US$ 38.54 billion) in FY19-20. India is the largest producer, consumer and exporter of spices in the world. According to the Department for Promotion of Industry and Internal Trade (DPIIT), a cumulative Foreign Direct Investment (FDI) equity inflow of about Rs. 67,000 crore (US$ 9.08 billion) was achieved between April 2000 and March 2019 in the agriculture sector alone. However, the sector is plagued by several structural challenges, with inadequate capital influx and operational gaps being the most critical ones. As a result, numerous interventions are being introduced by several stakeholders in the form of agricultural technology start-ups, better known as agritech start-ups, in the recent years.Start-up Momentum in India"
+                  },
+                  {
+                    "pointLabel": "There are more than 450 Indian start-ups in the agritech space with Indian start-ups featuring among one in every nine companies globally. Some of the major start-ups in the sector include Agrostar, Cropin, Jumbotail, Ninjacart and Stellops. The sector has been growing at a fast pace owing to a rise in the number of emerging agritech start-ups and investments, showcasing interest in the Indian agritech start-up scene globally. According to NASSCOM, these start-ups attracted funding from top investors such as Accel, Ankur Capital, Omnivore and others. Start-ups raised ~Rs. 1,825 crore (US$ 248 million) as of June 2019. Overall growth of the agritech sector is assisting adoption and acceptance of newer technologies."
+                  }
+                ]
+              },
+              {
+                "heading": "Business Opportunities and Innovative Solutions",
+                "descriptions": [
+                  {
+                    "pointLabel": "The agritech sector has made way for several market opportunities in India, especially in developing and refining market linkages. These developments include taking farmer products directly to consumers, digitising agriculture, improving accessibility to real-time information for farmers, increasing transparency across the value chain, providing better-quality implements to farmers to increase yields and offering micro-financing options to farmers to manage risks. All these solutions indicate that improving supply chain is a key focus area for agritech start-ups, with the underlying goal of increasing farmer share in profits from crop sales."
+                  },
+                  {
+                    "imageUrl": "assets/images/blogs/image3.png"
+                  }
+                ]
+              },
+              {
+                "heading": "Key Players and Business Models",
+                "descriptions": [
+                  {
+                    "pointLabel": "Various business models have emerged to tackle opportunities in the agricultural space. These can be categorised into five main buckets:"
+                  },
+                  {
+                    "pointsUnOrder": [
+                      "Upstream marketplace model – Agrostar, BigHaat, Agrevolution, Agronxt, Ninjacart, Agrihub and FarmGuru are the main players employing this model",
+                      "Downstream ‘farm-to-fork’ supply chain model – Krishi Star, Crofarm, Sabziwala and BharatBazar are start-ups working towards increasing efficiencies using this mechanism",
+                      "Farming-as-a-service model – Far Mart, EM3 Agri Services, RAVGO and Oxen are players offering farm equipment rentals to ease the burden of capital investments for farmers",
+                      "IoT or Big Data-led innovation model – FlyBird, Cropin and Exabit Systems are deploying smart technology to assist farmers gain access to timely information and drive productivity"
+                    ]
+                  },
+                  {
+                    "imageUrl": "assets/images/blogs/image4.png"
+                  }
+                ]
+              },
+              {
+                "heading": "Government Schemes and Initiatives",
+                "descriptions": [
+                  {
+                    "pointLabel": "The government has been a catalyst in the growth of the agritech sector. It has established the National Centre for Management and Agricultural Extension in Hyderabad (MANAGE). In addition, the Department of Science and Technology, GOI, organised a food and agri-business accelerator in association with a-IDEA, TBI of NAARM. The focus area of this programme was accelerating agri-business start-ups by providing mentoring, industry network and investor pitching guidance."
+                  },
+                  {
+                    "pointLabel": "The Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) was also introduced and implemented recently, with a major focus on conserving water and increasing irrigation coverage in the country. Under this scheme, Rs. 56,340 crore (US$ 7.64 billion) has been allocated for investments in end-to-end solutions on source creation, distribution, management, field application and extension activities. The government is also planning to grant Rs. 2,000 crore (US$ 270 million) for computerisation of the Primary Agricultural Credit Society (PACS), with the primary aim of benefitting cooperatives through the digital technology."
+                  },
+                  {
+                    "pointLabel": "The Indian govt. has lent a strong impetus on this sector and aims to double the income of farmers by 2022. Another initiative is the Agricultural Technology Management Agency (ATMA), which facilitates retrieval of data and data entry from web-based portals via a regular mobile phone (without using the Internet). They are operationalising more than a dozen services of innovative technologies, such as USSD, for farmers and other stakeholders in the supply chain. In addition, there have been many favourable government policies and initiatives such as PM-KISAN, PM-AASHA and PM-KMY among others that are uplifting farmers and benefitting stakeholders across the value chain. It seems that agritech is now uniquely poised for disruption via technology."
+                  }
+                ]
+              },
+              {
+                "heading": "The Road Ahead…",
+                "descriptions": [
+                  {
+                    "pointLabel": "Overall, the Indian agritech sector has huge untapped potential. Agritech seems to have reached that inflection point where it is gaining significant momentum among venture capitalists and government grants. Agriculture is an important industry in India’s economy and start-ups are playing a pivotal role in easing the burden on farmers by digitising the entire supply chain with use of new technologies such as artificial intelligence, internet of things, Big Data analytics and engineering innovations. The transparency and operational efficiencies being introduced and implemented are transforming India’s agricultural landscape."
+                  },
+                  {
+                    "pointRefLabel": "https://www.ibef.org/blogs/agritech-start-ups-the-ray-of-hope-in-indian-agriculture"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "header": "How To Start Sandalwood Farming",
+            "comment": "Sandalwood trees are popular for its beautiful fragrance and its wood materials are used from centuries. In India, sandalwood tree also popular as a Chandan or Srigandha and it is the most expensive tree plant.",
+            "showmore": "Show more",
+            "imageUrl": "assets/images/blogs/image6.jpg",
+            "date": "by Sudham on 20 Jan 2020",
+            "fullDescriptions": [
+              {
+                "heading": "How To Start Sandalwood Farming",
+                "descriptions": [
+                  {
+                    "pointLabel": "Sandalwood trees are popular for its beautiful fragrance and its wood materials are used from centuries. In India, sandalwood tree also popular as a Chandan or Srigandha and it is the most expensive tree plant."
+                  },
+                  {
+                    "pointLabel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  },
+                  {
+                    "pointLabel": "It is an evergreen tree and it is mostly used in cosmetic, therapeutic, commercial and medicinal. The maximum height of sandalwood tree is 13 to 16 meter and 100 cm to 200 cm girth. Sandalwood tree found in India, Nepal, Bangladesh, Pakistan, Sri Lanka, Australia, Indonesia, Hawaii, and Pacific Islands."
+                  },
+                  {
+                    "pointLabel": "sandalwood tree family: Santalaceae"
+                  },
+                  {
+                    "pointLabel": "sandalwood tree scientific name: Santalum album"
+                  },
+                  {
+                    "pointLabel": "In Indian tradition, Sandalwood trees are a special place and it used from cradle to cremation. It is also used in Cosmetics, Pharmaceutical, aromatherapy, soap industry, and perfumery so, the commercial value of sandalwood tree or oil is very high in the Indian market."
+                  },
+                  {
+                    "pointLabel": "Sandalwood has many varieties and these different varieties are available in the worldwide. Basically, there are two famous varieties of sandalwood which have a very high commercial value in the market. Sandalwood leaves are also used for animal fodder."
+                  },
+                  {
+                    "pointLabel": "Indian sandalwood"
+                  },
+                  {
+                    "pointLabel": "Australian sandalwood"
+                  },
+                  {
+                    "pointLabel": "The Sandalwood trees are ready for harvesting after 30 years of cultivation. If you are using organic cultivation method then you can get the sandalwood tree in 10 to 15 years. In India, there are two sandalwood colors are available white, yellow, and red."
+                  },
+                  {
+                    "pointLabel": "The best part of this sandalwood farming is that you can also grow sandalwood tree as an intercrop in Malabar Neem plantation."
+                  },
+                  {
+                    "pointLabel": "Sandalwood Tree Cultivation Details Required"
+                  },
+                  {
+                    "pointLabel": "If you are farmer or investor and planning for sandalwood tree cultivation then you can require proper climate, soil, land, plant selection, fertilizers, and irrigation. Before start cultivation, you must make proper project planning, calculate the expenses and profit, and note how much investment required for this cultivation."
+                  },
+                  {
+                    "pointLabel": "Which type of climate required for sandalwood?"
+                  },
+                  {
+                    "pointLabel": "Sandalwood tree can almost grow in every type soil, climate and temperature. Sandalwood tree crop requires hot atmosphere and it grows better in humid climatic conditions."
+                  },
+                  {
+                    "pointLabel": "Sandalwood tree cultivation also needs the temperature in between 12° and 35°C. It is the perfect temperature for good growth of sandalwood tree. At 600 and 1050 meters altitudes, this sandalwood tree plant grows well."
+                  },
+                  {
+                    "pointLabel": "Soil Requirement of Sandalwood Tree Cultivation"
+                  },
+                  {
+                    "pointLabel": "If you are planning for the sandalwood tree cultivation then you may require well-drained soils which have a good organic object. The red sandy loam soils are also suitable for the sandalwood tree and you get the high yield crop."
+                  },
+                  {
+                    "pointLabel": "A Soil test is must require for checking the nutrient requirements for the sandalwood plantation are present or not in the soil. Sandalwood tree cultivation requires pH of the soil in between 6.5 to 7.5 with a little bit of alkaline."
+                  },
+                  {
+                    "pointLabel": "Before starting plantation of sandalwood tree plow the field until you get excellent tilth and weed free soil. Also, prepare the soil in such a way that the water in heavy rain or floods is easily come out from the drain."
+                  },
+                  {
+                    "pointLabel": "Sandalwood cultivation process can be done by seeds and vegetatively through tissue culture."
+                  },
+                  {
+                    "pointLabel": "Common Pests and Diseases in Sandalwood Tree Cultivation"
+                  },
+                  {
+                    "pointLabel": "Insect Pests Of Sandalwood"
+                  },
+                  {
+                    "pointLabel": "Defoliators"
+                  },
+                  {
+                    "pointLabel": "Calodia kirkaldyiNielson"
+                  },
+                  {
+                    "pointLabel": "Cardiococcus bivalvata(Green)"
+                  },
+                  {
+                    "pointLabel": "Eumeta crameri(Westwood)"
+                  },
+                  {
+                    "pointLabel": "Hotea nigrorufaWalker"
+                  },
+                  {
+                    "pointLabel": "Hyposidra talacaWalker"
+                  },
+                  {
+                    "pointLabel": "Nyctemera lacticinia(Cramer)"
+                  },
+                  {
+                    "pointLabel": "Purpuricenus sanguinolentus(Olivier)"
+                  },
+                  {
+                    "pointLabel": "Tajuria cippus(Fabricius)"
+                  },
+                  {
+                    "pointLabel": "Teratodes monticollis(Gray)"
+                  },
+                  {
+                    "pointLabel": "Toxoptera aurantii(Boyer de Fonscolombe)"
+                  },
+                  {
+                    "pointLabel": "Trabala vishnou (Lefèbvre)"
+                  },
+                  {
+                    "pointLabel": "How To Plant Sandalwood Tree?"
+                  },
+                  {
+                    "pointLabel": "In sandalwood tree cultivation sowing mainly done by the seeds. When sandalwood tree plants are 15 to 20 years old then in August to march you can collect the seeds from the sandalwood."
+                  },
+                  {
+                    "pointLabel": "The collected seeds are well-treated and dried in sunlight before geminate on nursery beds. There are two types of seed beds are available in the nursery for the sowing sandalwood seeds."
+                  },
+                  {
+                    "pointLabel": "sunken"
+                  },
+                  {
+                    "pointLabel": "raised beds"
+                  },
+                  {
+                    "pointLabel": "After in 7 to 8 months, a seedling grows up to 30 to 35 cm on nursery beds and they are ready for the transfer in the main field."
+                  },
+                  {
+                    "pointLabel": "When you prepare soil or land for cultivation then at the same time also digging 45 x 45 x 45 cm size of a pit for planting the sandalwood seedlings."
+                  },
+                  {
+                    "pointLabel": "Before planting the seedlings make sure any water will not stable in pits. If some water in pits then relinquishes the pits below the sunlight for some days. You must keep the 10 feet plant to plant distance. After four years of planting, you will get the flower on sandalwood tree."
+                  },
+                  {
+                    "pointLabel": "Where Did You Get Baby Plant?"
+                  },
+                  {
+                    "pointLabel": "If you do not want’s to grow this commercial crop from seeds, then purchased them from the market and plant them with a suitable method of sandalwood plantation. But, take care them while buying from the market."
+                  },
+                  {
+                    "pointLabel": "In the market, there are many private and govt. nurseries are present, from where you can buy the baby sandalwood plants and can grow them in your field. But, purchasing them from a genuine source is a smart thing."
+                  },
+                  {
+                    "pointLabel": "You can also buy the sandalwood baby plant through online."
+                  },
+                  {
+                    "pointLabel": "How Much a Sandalwood Baby Plant Cost?"
+                  },
+                  {
+                    "pointLabel": "For growing sandalwood plants via planting sandalwood baby plants, they should be purchased from a genuine and certified source."
+                  },
+                  {
+                    "pointLabel": "Generally, sandalwood plants are the most valuable plant in India but for commercial plantation, you have to plant more numbers of plants on your farm. Usually, a single baby plant cost up to Rs. 500 to Rs. 1000 per plant but for commercial plantation, you have to plant more numbers of plants on your farm, you can get a baby plant @ Rs. 100 from a genuine source."
+                  },
+                  {
+                    "pointLabel": "Irrigation For Sandalwood Tree Cultivation"
+                  },
+                  {
+                    "pointLabel": "If you have limited water then you can use the drip irrigation method for sandalwood tree cultivation. In sandalwood cultivation crop require less water so, you can apply the drip irrigation in the interval of 2 to 3 weeks. Sandalwood tree young plants require irrigation only in hot and summer seasons they do not require irrigation in the rainy condition."
+                  },
+                  {
+                    "pointLabel": "Fertilizers For Sandalwood Tree Cultivation"
+                  },
+                  {
+                    "pointLabel": "In sandalwood farming, you may choose to use the Bio-fertilizers, organic and chemical fertilizers for getting the high yield of a crop. You can also use any rotten farmyard manure (FYM)."
+                  },
+                  {
+                    "pointLabel": "Cow dung"
+                  },
+                  {
+                    "pointLabel": "Garden compost"
+                  },
+                  {
+                    "pointLabel": "Vermin-compost"
+                  },
+                  {
+                    "pointLabel": "Manure made from green leaves"
+                  },
+                  {
+                    "pointLabel": "The bio-pesticides made from the following materials and it’s used for the controlling any pests and diseases of sandalwood cultivation."
+                  },
+                  {
+                    "pointLabel": "Chitrakmool"
+                  },
+                  {
+                    "pointLabel": "Neem (kernel, seeds & leaves)"
+                  },
+                  {
+                    "pointLabel": "Dhatura"
+                  },
+                  {
+                    "pointLabel": "Cow’s urine"
+                  },
+                  {
+                    "pointLabel": "Harvesting Time Of Sandalwood Tree"
+                  },
+                  {
+                    "pointLabel": "Sandalwood tree grows well and matures after 30 years from planting so, it will be ready for harvesting. In latest technology there are many tree cutting instruments are available in the market so you can use any instrument for harvest sandalwood tree. The heartwood of sandalwood trees are transferred into the mill and soft woods are removed."
+                  },
+                  {
+                    "pointLabel": "By using some machine this hard sandalwood is transferring into powder. This sandalwood powder soaks in water for 2 days after it’s used for making oil and other cosmetic products."
+                  },
+                  {
+                    "pointLabel": "Sandalwood Tree Name And Productions Places"
+                  },
+                  {
+                    "pointLabel": "Sandalwood Tree Common Name In India"
+                  },
+                  {
+                    "pointLabel": "Safed Chandan"
+                  },
+                  {
+                    "pointLabel": "Chandan"
+                  },
+                  {
+                    "pointLabel": "Sandal and Sandalwood"
+                  },
+                  {
+                    "pointLabel": "Santalum album"
+                  },
+                  {
+                    "pointLabel": "ShiriGandha"
+                  },
+                  {
+                    "pointLabel": "Aninditha"
+                  },
+                  {
+                    "pointLabel": "Arishta Phalam"
+                  },
+                  {
+                    "pointLabel": "Bhadhrashraya"
+                  },
+                  {
+                    "pointLabel": "Sarpavasa"
+                  },
+                  {
+                    "pointLabel": "Chandrakanta"
+                  },
+                  {
+                    "pointLabel": "Gandhasara"
+                  },
+                  {
+                    "pointLabel": "Thailaparna"
+                  },
+                  {
+                    "pointLabel": "Malayaja"
+                  },
+                  {
+                    "pointLabel": "Sandalwood Tree Local Names In India"
+                  },
+                  {
+                    "pointLabel": "Chandan(Hindi)"
+                  },
+                  {
+                    "pointLabel": "Gandhapu Chekka(Telugu)"
+                  },
+                  {
+                    "pointLabel": "Cantana(Tamil)"
+                  },
+                  {
+                    "pointLabel": "Raktacandanaṁ(Malayalam)"
+                  },
+                  {
+                    "pointLabel": "Śrigandhada(Kannada)"
+                  },
+                  {
+                    "pointLabel": "Candana(Marathi)"
+                  },
+                  {
+                    "pointLabel": "Candana(Gujarati)"
+                  },
+                  {
+                    "pointLabel": "Canana(Punjabi)"
+                  },
+                  {
+                    "pointLabel": "Candana(Bengali)"
+                  },
+                  {
+                    "pointLabel": "Where sandalwood tree found in India ?"
+                  },
+                  {
+                    "pointLabel": "Andhra Pradesh"
+                  },
+                  {
+                    "pointLabel": "Telangana"
+                  },
+                  {
+                    "pointLabel": "Bihar"
+                  },
+                  {
+                    "pointLabel": "Gujarat"
+                  },
+                  {
+                    "pointLabel": "Karnataka"
+                  },
+                  {
+                    "pointLabel": "Madhya Pradesh"
+                  },
+                  {
+                    "pointLabel": "Maharashtra"
+                  },
+                  {
+                    "pointLabel": "Tamil Nadu"
+                  },
+                  {
+                    "pointLabel": "Sandalwood Tree Varieties And Cost"
+                  },
+                  {
+                    "pointLabel": "Various Sandalwood varieties in World"
+                  },
+                  {
+                    "pointLabel": "Indian sandalwood (Santalum album)"
+                  },
+                  {
+                    "pointLabel": "Australian Sandalwood(Santalum spicatum)"
+                  },
+                  {
+                    "pointLabel": "Red sandalwood(Pterocarpus santalinus)"
+                  },
+                  {
+                    "pointLabel": "Santalum ellipticum"
+                  },
+                  {
+                    "pointLabel": "Santalum austrocaledonicum"
+                  },
+                  {
+                    "pointLabel": "Santalum freycinetianum"
+                  },
+                  {
+                    "pointLabel": "Santalum acuminatum"
+                  },
+                  {
+                    "pointLabel": "Santalum lanceolatum"
+                  },
+                  {
+                    "pointLabel": "Santalum haleakalae"
+                  },
+                  {
+                    "pointLabel": "Osyris lanceolata"
+                  },
+                  {
+                    "pointLabel": "Myoporum sandwicense"
+                  },
+                  {
+                    "pointLabel": "Adenanthera pavonina"
+                  },
+                  {
+                    "pointLabel": "Eremophila mitchellii"
+                  },
+                  {
+                    "pointLabel": "Myoporum platycarpum"
+                  },
+                  {
+                    "pointLabel": "Baphia nitida"
+                  },
+                  {
+                    "pointLabel": "Santalum obtusifolium"
+                  },
+                  {
+                    "pointLabel": "What is the cost of sandalwood?"
+                  },
+                  {
+                    "pointLabel": "The market price of sandalwood is in between Rs 3,000 to 6,000 per kg and sometimes it will be Rs 10,000 per kg."
+                  },
+                  {
+                    "pointLabel": "Health Benefits of Sandalwood"
+                  },
+                  {
+                    "pointLabel": "Sandalwood tree paste and its essential oil work as very effective anti-inflammatory agents."
+                  },
+                  {
+                    "pointLabel": "Mostly, sandalwood trees are used for making perfumery products and deodorants."
+                  },
+                  {
+                    "pointLabel": "Sandalwood tree oil is used for reducing stress and hypertension."
+                  },
+                  {
+                    "pointLabel": "Sandalwood is mainly used in religious rituals in India."
+                  },
+                  {
+                    "pointLabel": "Benefits Of Sandalwood Oil"
+                  },
+                  {
+                    "pointLabel": "Sandalwood Oil Skin Benefits"
+                  },
+                  {
+                    "pointLabel": "Get Bright, Clean And Flawless Skin."
+                  },
+                  {
+                    "pointLabel": "Cures Skin Infections And Itching."
+                  },
+                  {
+                    "pointLabel": "Prevents Skin Aging."
+                  },
+                  {
+                    "pointLabel": "Sandalwood Oil Health Benefits"
+                  },
+                  {
+                    "pointLabel": "Get Rid Of Inflammation."
+                  },
+                  {
+                    "pointLabel": "Prevents Spasms."
+                  },
+                  {
+                    "pointLabel": "Used As An Antiseptic Agent."
+                  },
+                  {
+                    "pointLabel": "Boosts Renal Health."
+                  },
+                  {
+                    "pointLabel": "Keeps Blood Pressure Under Control."
+                  },
+                  {
+                    "pointLabel": "Say ‘No’ To Body Odor."
+                  },
+                  {
+                    "pointLabel": "Great Health Tonic For Kids."
+                  },
+                  {
+                    "pointLabel": "Drives Away Stress And Anxiety."
+                  },
+                  {
+                    "pointLabel": "Fights Viral Infections."
+                  },
+                  {
+                    "pointLabel": "Helps Boost Memory."
+                  },
+                  {
+                    "pointLabel": "Sandalwood Oil Miscellaneous Benefits"
+                  },
+                  {
+                    "pointLabel": "Keeps Bugs And Germs At Bay"
+                  },
+                  {
+                    "pointLabel": "Sandalwood Yield Per Tree"
+                  },
+                  {
+                    "pointLabel": "If you are planning for the sandalwood tree cultivation then you will have a patience for wait its yield and profit because sandalwood tree takes a long time for growing to compare to any other trees."
+                  },
+                  {
+                    "pointLabel": "If you provide proper climate conditions, soil and irrigation to sandalwood tree so, per year it can grow 5 cm girth. Almost, You can get the 10 to 25 kg sandalwood tree wood depends on the tree growth."
+                  },
+                  {
+                    "pointLabel": "Sandalwood tree growths are depending on the many factors."
+                  },
+                  {
+                    "pointLabel": "Selection of land"
+                  },
+                  {
+                    "pointLabel": "Selecting the sandalwood spices"
+                  },
+                  {
+                    "pointLabel": "Host plant management"
+                  },
+                  {
+                    "pointLabel": "Irrigation management"
+                  },
+                  {
+                    "pointLabel": "Pest and disease control management"
+                  },
+                  {
+                    "pointLabel": "Age of Sandalwood Tree (in years). Girth (in cm). Hear wood yield (in kg)."
+                  },
+                  {
+                    "pointLabel": "10 10 1"
+                  },
+                  {
+                    "pointLabel": "20 22 4"
+                  },
+                  {
+                    "pointLabel": "30 33 10"
+                  },
+                  {
+                    "pointLabel": "40 44 20"
+                  },
+                  {
+                    "pointLabel": "50 55 30"
+                  },
+                  {
+                    "pointLabel": "Subsidy For Sandalwood Cultivation"
+                  },
+                  {
+                    "pointLabel": "There are many banks are available in India which provides the facilities of subsidy and loan to farmers for sandalwood tree cultivation. You can directly contact these banks for more current subsidy or loan information."
+                  },
+                  {
+                    "pointLabel": "NABARD"
+                  },
+                  {
+                    "pointLabel": "NMPB (National medicinal plants board)"
+                  },
+                  {
+                    "pointLabel": "Sandalwood Plantation Cost And Profit"
+                  },
+                  {
+                    "pointLabel": "The profit and cost of sandalwood tree cultivation are depended on the market conditions and it will change year to year and region to region. Generally, in a one-acre land, you can grow the 400 to 440 sandalwood tree plants."
+                  },
+                  {
+                    "pointLabel": "Sandalwood tree cultivation costs depend on the many factors. "
+                  },
+                  {
+                    "pointLabel": "Plant cost"
+                  },
+                  {
+                    "pointLabel": "Labor cost of planting"
+                  },
+                  {
+                    "pointLabel": "Drip cost"
+                  },
+                  {
+                    "pointLabel": "Soil working"
+                  },
+                  {
+                    "pointLabel": "Weed control"
+                  },
+                  {
+                    "pointLabel": "Pests/disease cost"
+                  },
+                  {
+                    "pointLabel": "In the local market, these sandalwood trees are very demanded. So, you can get the good returns from this Sandalwood tree cultivation. This all information that is required for any farmer or investor to grow the sandalwood tree."
+                  },
+                  {
+                    "pointRefLabel": "https://www.farmnewsindia.in/2019/11/22/ow-to-start-sandalwood-chandan-tree-cultivation-in-india/"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "header": "AGRICULTURE IN INDIA",
+            "comment": "Agriculture is the primary source of livelihood for about 58% of India’s population. Gross Value Added (GVA) by agriculture, forestry and fishing was estimated at Rs. 19.48 lakh crore (US$ 276.37 billion) in FY20 (PE). Growth in GVA in agriculture and allied sectors",
+            "showmore": "Show more",
+            "imageUrl": "assets/images/blogs/image5.jpg",
+            "date": "by Sudham on 20 Jan 2020",
+            "fullDescriptions": [
+              {
+                "heading": "AGRICULTURE IN INDIA",
+                "descriptions": [
+                  {
+                    "pointLabel": "Agriculture is the primary source of livelihood for about 58% of India’s population. Gross Value Added (GVA) by agriculture, forestry and fishing was estimated at Rs. 19.48 lakh crore (US$ 276.37 billion) in FY20 (PE). Growth in GVA in agriculture and allied sectors stood at 4% in FY20.The Indian food industry is poised for huge growth, increasing its contribution to world food trade every year due to its immense potential for value addition, particularly within the food processing industry. Indian food and grocery market is the world’s sixth largest, with retail contributing 70% of the sales. The Indian food processing industry accounts for 32% of the country’s total food market, one of the largest industries in India and is ranked fifth in terms of production, consumption, export and expected growth."
+                  }
+                ]
+              },
+              {
+                "heading": "Investments",
+                "descriptions": [
+                  {
+                    "pointLabel": "According to the Department for Promotion of Industry and Internal Trade (DPIIT), the Indian food processing industry has cumulatively attracted Foreign Direct Investment (FDI) equity inflow of about US$ 10.15 billion between April 2000 and June 2020."
+                  },
+                  {
+                    "pointLabel": "Some major investments and developments in agriculture are as follows:"
+                  },
+                  {
+                    "pointsUnOrder": [
+                      "In March 2020, Fact, the oldest large¬¬¬¬¬¬¬ scale fertiliser manufacturer in the country, crossed one million production and sales mark.",
+                      "Nestle India will invest Rs. 700 crore (US$ 100.16 million) in construction of its ninth factory in Gujarat.",
+                      "In November¬¬¬¬¬¬ 2019, Haldiram entered into an agreement for Amazon's global selling program to E-tail its delicacies in the United States.",
+                      "In November 2019, Coca-Cola launched ‘Rani Float’ fruit juices to step out of its trademark fizzy drinks.",
+                      "Two diagnostic kits developed by Indian Council of Agricultural Research (ICAR) - Indian Veterinary Research Institute (IVRI) and the Japanese Encephalitis lgM ELISA were launched in October ",
+                      "Investment worth Rs. 8,500 crore (US$ 1.19 billion) have been announced in India for ethanol production."
+                    ]
+                  }
+                ]
+              },
+              {
+                "heading": "Government Initiatives",
+                "descriptions": [
+                  {
+                    "pointLabel": "Some of the recent major Government initiatives in the sector are as follows:"
+                  },
+                  {
+                    "pointsUnOrder": [
+                      "In October 2020, the Tribal Cooperative Marketing Development Federation of India (TRIFED) included 100 new Forest Fresh Organic Products sourced from tribes across India on its e-marketplace (tribesindia.com).",
+                      "In October 2020, Agri-lender Nabard (National Bank for Agriculture and Rural Development) proposed plans to set up a subsidiary to provide guarantee for loans under agriculture and rural development.",
+                      "In October 2020, the government announced that it is putting up a common data infrastructure for farmers in the country. PMFBY (Pradhan Mantri Fasal Bima Yojana), PM-Kisan and the Soil Health Card will be integrated through a common database, along with land record details.",
+                      "In September 2020, the government launched the PM Matsya Sampada Yojana, e-Gopala App and several initiatives in fisheries production, dairy, animal husbandry and agriculture. Under this scheme, an investment of Rs. 20,000 crore (US$ 2.7 billion) will be made in the next 4-5 years in 21 states.",
+                      "In May 2020, Government announced the launch of animal husbandry infrastructure development fund of Rs. 15,000 crore (US$ 2.13 billion).",
+                      "In September 2019, Prime Minister, Mr. Narendra Modi launched National Animal Disease Control Programme (NADCP), expected to eradicate foot and mouth disease (FMD) and brucellosis in livestock. In May 2020, Rs. 13,343 crore (US$ 1.89 billion) was allocated to the scheme.",
+                      "The Government of India came out with Transport and Marketing Assistance (TMA) scheme to provide financial assistance for transport and marketing of agriculture products in order to boost agriculture exports.",
+                      "The Agriculture Export Policy, 2018 was approved by the Government of India in December 2018. The new policy aimed to increase India’s agricultural export to US$ 60 billion by 2022 and US$ 100 billion in the next few years with a stable trade policy regime.",
+                      "The Government of India is going to provide Rs. 2,000 crore (US$ 306.29 million) for computerization of Primary Agricultural Credit Society (PACS) to ensure cooperatives are benefitted through digital technology.",
+                      "The Government of India launched the Pradhan Mantri Krishi Sinchai Yojana (PMKSY) with an investment of Rs. 50,000 crore (US$ 7.7 billion) aimed at development of irrigation sources for providing a permanent solution from drought.",
+                      "Government plans to triple the capacity of food processing sector in India from the current 10% of agriculture produce and has also committed Rs. 6,000 crore (US$ 936.38 billion) as investments for mega food parks in the country, as a part of the Scheme for Agro-Marine Processing and Development of Agro-Processing Clusters (SAMPADA).",
+                      "The Government of India has allowed 100% FDI in marketing of food products and in food product E-commerce under the automatic route."
+                    ]
+                  }
+                ]
+              },
+              {
+                "heading": "Achievements in the sector",
+                "descriptions": [
+                  {
+                    "pointsUnOrder": [
+                      "In November 2020, Minister of Consumer Affairs, Food and Public Distribution, Mr. Piyush Goyal announced that the Food Cooperation of India and state agencies are set to procure a record quantity of 742 LMT (lakh metric tonnes) paddy during the ongoing Kharif crop season as against 627 LMT paddy last year.",
+                      "The Electronic National Agriculture Market (e-NAM) was launched in April 2016 to create a unified national market for agricultural commodities by networking existing APMCs. It had 16.6 million farmers and 131,000 traders registered on its platform until May 2020. Over 1,000 mandis in India are already linked to e-NAM and 22,000 additional mandis are expected to be linked by 2021-22.",
+                      "Sale of tractors in the country stood at 804,000 units in 2019 with export of 80,475 units.",
+                      "During FY20 (till February 2020), tea export stood at US$ 709.28 million.",
+                      "Coffee export stood at US$ 742.05 million in FY20"
+                    ]
+                  }
+                ]
+              },
+              {
+                "heading": "Road Ahead",
+                "descriptions": [
+                  {
+                    "pointLabel": "India is expected to achieve the ambitious goal of doubling farm income by 2022. The agriculture sector in India is expected to generate better momentum in the next few years due to increased investment in agricultural infrastructure such as irrigation facilities, warehousing and cold storage. Furthermore, the growing use of genetically modified crops will likely improve the yield for Indian farmers. India is expected to be self-sufficient in pulses in the coming few years due to concerted effort of scientists to get early maturing varieties of pulses and the increase in minimum support price.Going forward, the adoption of food safety and quality assurance mechanisms such as Total Quality Management (TQM) including ISO 9000, ISO 22000, Hazard Analysis and Critical Control Points (HACCP), Good Manufacturing Practices (GMP) and Good Hygienic Practices (GHP) by the food processing industry will offer several benefits. The agri export from India is likely to reach the target of US$ 60 billion by the year 2022."
+                  },
+                  {
+                    "pointRefLabel": " Agricultural and Processed Food Products Export Development Authority (APEDA), Department of Commerce and Industry, Union Budget 2020-21, Press Information Bureau, Ministry of Statistics and Programme Implementation, Press Releases, Media Reports, Ministry of Agriculture and Farmers Welfare, Crisil*as per 3rd advance estimates, PE- Provisional Estimates"
+                  },
+                  {
+                    "pointLabel": "Note: Conversion rate used in April 2020, Rs. 1 = US$ 0.013123"
+                  },
+                  {
+                    "pointLabel": "Disclaimer: This information has been collected through secondary research and IBEF is not responsible for any errors in the same."
+                  },
+                  {
+                    "pointRefLabel": "https://www.ibef.org/industry/agriculture-india.aspx"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "header": "The pros and cons of buying agricultural land.",
+            "comment": "A number of urban investors are investing in agricultural land, owing to the slump in urban realty and the promise of greater long-term returns. We examine the benefits and risks, for those who wish to buy agricultural land.",
+            "showmore": "Show more",
+            "imageUrl": "assets/images/blogs/image7.jpg",
+            "date": "A number of urban investors are investing in agricultural land, owing to the slump in urban realty and the promise of greater long-term returns. We examine the benefits and risks, for those who wish to buy agricultural land.",
+            "fullDescriptions": [
+              {
+                "heading": "The pros and cons of buying agricultural land.",
+                "descriptions": [
+                  {
+                    "pointLabel": "A number of urban investors are investing in agricultural land, owing to the slump in urban realty and the promise of greater long-term returns. We examine the benefits and risks, for those who wish to buy agricultural land."
+                  },
+                  {
+                    "pointsUnOrder": [
+                      "Pros and cons of buying agricultural land",
+                      "PotentTial ROI on agricultural land",
+                      "Advantages of investing in agricultural land",
+                      "Disadvantages of buying agricultural land",
+                      "Check applicable laws",
+                      "Trends",
+                      "States offering agricultural land for real estate development"
+                    ],
+                    "pointLabel": "With growing purchasing power, investors in India are now searching for innovative ideas to earn returns from their investments. One such way is investing in agricultural land. While some investors keep such land as an asset, there is a section of investors who leverage the growing market of organic fruits and vegetables, to supplement their income. A number of experts have agreed that farm investment is a safe option for parking one’s funds as the return on investment is usually higher than other investments and also lends safety to investors’ money. Also termed as agro-realty, the market for such investors is growing, especially after the COVID-19 pandemic."
+                  }
+                ]
+              },
+              {
+                "heading": "Pros and cons of buying agricultural land",
+                "descriptions": [
+                  {
+                    "imageUrl": "assets/images/blogs/image8.jpg"
+                  },
+                  {
+                    "pointLabel": "Urban investors are now looking at the returns potential of agricultural land in the suburban or peripheral areas of big cities and state capitals."
+                  },
+                  {
+                    "pointLabel": "“While the land is inexpensive, in comparison to an urban land, investors expect some healthy returns in terms of resale value"
+                  },
+                  {
+                    "pointLabel": "There is an increasing demand for such land parcels, owing to the scarcity and high price of land in cities, with urban investors buying it to earn profits on resale or use it for cultivation."
+                  },
+                  {
+                    "pointLabel": "Ravi Gaurav, member of MCHI, explains that “Many investors feel that buying agricultural land in neighboring districts of tier-1 and tier-2 cities and rural areas, is the best investment alternative in the prevalent market conditions. Although agricultural land has always been considered as one of the best long-term investment options, it has become sought after now, due to the slump in urban realty markets.”"
+                  }
+                ]
+              },
+              {
+                "heading": "Potential ROI on agricultural land",
+                "descriptions": [
+                  {
+                    "pointLabel": "The returns are higher in emerging and developing areas, where there is a possibility of upcoming infrastructure projects, such as a special economic zone or a highway.<b> Pradeep Mishra, a Delhi-based real estate consultant,</b> points out that “It is good, if the land is located in an area where some government scheme is to be launched, or if it is included in the master plan of the region.” Chances are that such a piece of land will fetch a higher value, in future, he adds."
+                  }
+                ]
+              },
+              {
+                "heading": "Advantages of investing in agricultural land",
+                "descriptions": [
+                  {
+                    "pointLabel": "An agricultural land plot can guarantee long-term returns, if it is in an area where the government has planned some infrastructure project in the near future."
+                  },
+                  {
+                    "pointLabel": "Moreover, the compensation, in the case of acquisition by the government, is higher for rural land than that for an urban land. A number of state governments are also planning a land pooling policy, for areas where city is expanding. If you become an owner under the land pooling policy, you will get a guaranteed regular return from the pool."
+                  },
+                  {
+                    "pointLabel": "As is true of all land-related developments, your asset does not depreciate with time – something that cannot be said about property such as flats, apartments, etc. With time, the quality of the building structure deteriorates and the owner has to spend substantial amounts of money, to maintain it. Investing in agricultural land, not only saves you from spending all that money but also leaves you with an option to use the land for varying purposes in future, within the boundaries of the law."
+                  },
+                  {
+                    "pointLabel": "In Karnataka State , The Karnataka Government notified a landmark Ordinance getting rid of the restrictions on buying and selling agricultural plots by non-agriculturists, and bidding bye to decades old law.The amendment to the Land Reforms Act, 1961, however, imposes a ceiling on how much agricultural land an individual or a farmer can buy in Karnataka to prevent hoarding."
+                  },
+                  {
+                    "pointLabel": "Now any Indian, or a trust, society, company or an educational institution can buy farmland in Karnataka regardless of the buyer’s annual income from non-agricultural sources"
+                  }
+                ]
+              },
+              {
+                "heading": "Disadvantages of buying agricultural land",
+                "descriptions": [
+                  {
+                    "pointLabel": "Conversion is not easy: You cannot convert a fertile piece of agricultural land into a residential one. The land should be a dry land, for conversion."
+                  },
+                  {
+                    "pointLabel": "Land Ceiling Act: A number of states restrict the ownership of land. Therefore, check how much can be bought in that state."
+                  },
+                  {
+                    "pointLabel": "Knowledge of local land laws and terminology are a must: Buying agricultural land could be extremely difficult, if the buyer is not well aware of the land laws and the local terminologies used in the course of the transaction. Since land is a state subject, laws are different in each state and not having a thorough knowledge, will be disadvantageous, considering the legalities involved in the process."
+                  },
+                  {
+                    "pointLabel": "The knowledge of local land measurement units, for example, is a must to have a clear understanding and extent of the land parcel you are buying. The knowledge of conversion of these units to globally accepted measurement units, would also give you an idea about the per sq ft rate you will be paying for the same."
+                  }
+                ]
+              },
+              {
+                "heading": "Check applicable laws",
+                "descriptions": [
+                  {
+                    "pointLabel": "Evaluate other applicable laws pertaining to the transfer of the rights to the land, ownership records of the land and leases, if any. Often, such plots of agricultural land may not be transferrable. The land may also be a leased one. In such cases, make sure that the tenants do not have any rights over the land and only enter into the transaction, after all such issues are cleared."
+                  }
+                ]
+              },
+              {
+                "heading": "Trends",
+                "descriptions": [
+                  {
+                    "pointLabel": "Investors in this segment, are either buying dry converted rural land, or are buying land through resale. While the value is still lower than land plots in the city area, these investors become owners of land in a rural area. This way, they become eligible for buying more actual agricultural land. Some people also buy a small piece of residential property in a village and use this residential address, to buy an agricultural land within the same village."
+                  },
+                  {
+                    "pointLabel": "Prices of agricultural land are expected to increase, especially around urban areas, owing to the growing demand for affordable housing, which is only feasible along the outskirts of metro cities. Land in such areas is also in demand, for public and private projects, adds Gaurav. Nevertheless, you will need to spend a substantial amount to buy the land and hence, you should cover all the risks, before you enter the deal."
+                  }
+                ]
+              },
+              {
+                "heading": "States offering agricultural land for real estate development",
+                "descriptions": [
+                  {
+                    "pointLabel": "Investors who are considering buying an agricultural property in rural areas around the city, may find this opportunity very lucrative as, now, a number of state governments are opening up farm lands for housing development and industrial purposes. Recently, the state government of Gujarat announced that real estate developers will be allowed to purchase agricultural land for affordable housing under the Gujarat Tenancy Act. Similarly, in Karnataka, the state government passed amendments to the land reforms act that liberalised farmland ownership and extends the facility to buy agricultural land by a non-agriculturist. This could just be a start and very soon, other states may open up farm lands for real estate construction, resulting in more supply and maybe, cheaper homes."
+                  }
+                ]
+              },
+              {
+                "heading": "FAQs",
+                "descriptions": [
+                  {
+                    "pointLabel": "Is sale of rural agricultural land taxable?"
+                  },
+                  {
+                    "pointLabel": "Agricultural land in rural areas is not considered a capital asset. This is the reason any gains from its sale are not taxable under the head Capital Gains."
+                  },
+                  {
+                    "pointLabel": "How much construction is allowed on agricultural land?"
+                  },
+                  {
+                    "pointLabel": "Agricultural land cannot be used for constructing property. You need to get the land use converted from agricultural to residential before any construction."
+                  },
+                  {
+                    "pointRefLabel": "https://housing.com/news/pros-cons-buying-agricultural-land/"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "header": "A Theoretical Investigation",
+            "comment": "The nation is striving to find ways and means to keep its burgeoning population adequately fed. On the one hand it is facing the problem of declining productivity and on the other, challenges posed by liberalization. In such a scenario, leveraging the available natural resources and existing infrastructure is the only way to make the ends meet. ",
+            "showmore": "Show more",
+            "imageUrl": "assets/images/honey/bitmap.png",
+            "fullDescriptions": [
+              {
+                "heading": "Investment and Returns in Indian Agricultural Research: A Theoretical Investigation",
+                "descriptions": [
+                  {
+                    "pointLabel": "The nation is striving to find ways and means to keep its burgeoning population adequately fed. On the one hand it is facing the problem of declining productivity and on the other, challenges posed by liberalization. In such a scenario, leveraging the available natural resources and existing infrastructure is the only way to make the ends meet. Management of the already built infrastructure in harmony with natural systems is the clarion call of the day. Knowledge of the extent of existing infrastructure and natural resources is one of the most basic pre-requisites to utilize them effectively and in a sustainable manner. Through agricultural research and development welfare improvement has been realized. This paper highlights the research, confronts faced and the benefits that was taken place in Indian agriculture."
+                  }
+                ]
+              },
+              {
+                "heading": "Keywords",
+                "descriptions": [
+                  {
+                    "pointLabel": "Agricultural R&D, Public investment, Private investment, Returns"
+                  }
+                ]
+              },
+              {
+                "heading": "Introduction",
+                "descriptions": [
+                  {
+                    "pointLabel": "The future of Indian agriculture will be one of knowledge and technology intensive and wider dissemination of the same can not be accomplished in isolation. Even though the share of agriculture in GDP has declined to one-fifth from one-half at the time of Independence, agriculture remains the predominant sector in terms of employment and livelihood provision for more than half of India’s workforce engaged in it as the principal occupation [1]. Agriculture still contributes significantly to export earnings and supplies raw materials to many industries. To achieve a higher rate of agricultural growth in order to meet the demands of increasing population (expected to reach 1.63 billion by 2050), technological advancement will be very critical."
+                  },
+                  {
+                    "pointLabel": "The advances in biotechnology and their integration with plant breeding will pave the way for achieving higher yield crops. In the significant advances India has made in agriculture during the past half-a-century, the role of agricultural input industry is very significant. The expansion in the use of seed, fertilizer, agrochemicals, irrigation and agricultural machinery industry has occurred parallel with the growth in productivity of rice, wheat, cotton, corn, sunflower, soybean, sugarcane and vegetables. While the public sector R&D, extension, and seed supply has made substantial contributions to food and non-food crops production, agri-business companies have been working with government to reach out to farmers in the supply of agricultural inputs used from sowing to harvest."
+                  },
+                  {
+                    "pointLabel": "Agricultural science has always played a critical role in economic progress in both developed and developing economies. Through agricultural R&D, welfare improvement has been realized in the form of lower food prices to domestic population, improved nutrition, expansion in rural employment, agricultural exports and enhanced level of foreign exchange, competitiveness of agricultural commodities in the world markets and strong growth linkages with rest of the economy. During the green revolution period, adoption of new technologies has helped to improve the income distribution across income classes [2]."
+                  },
+                  {
+                    "pointLabel": "Royal Agricultural Society of England, founded during 1790s in UK, paved the way for growth of experimental farming. Almost 150 years have passed since US public-sector agricultural research and development (R&D) began in earnest with the establishment of the US Department of Agriculture. Subsequently, in US agriculture, Public and Private agricultural R&D played a major role in bringing about changes."
+                  },
+                  {
+                    "pointLabel": "India saw the beginning of scientific farming with the establishment of Department of Agriculture in each Indian province in 1880 under the British rule. Next step was to establish Imperial Agricultural Research Institute to foster agricultural research and education and decentralization of agricultural developmental activities to the Provincial Governments in response to Montague–Chelmsford Reform (1919). When the country got independence, in the efforts to develop country’s agriculture, promotion of agricultural R&D was considered as the most important one. The agricultural review team chaired by Dr M.W. Parker of USDA (1963) suggested far-reaching changes in organization and management of agricultural research in the country."
+                  },
+                  {
+                    "pointLabel": "The research centres across the country came under the one roof of Indian Council of Agricultural Research. Corresponding changes occurred at the state level with the transfer of research and education to State Agricultural Universities (SAUs). All these efforts culminated in the development of agriculture as a modern sector along with rest of the economy and agriculture emerged as key sector. This paper highlights the research, confronts faced and the benefits that was taken place in Indian agriculture."
+                  }
+                ]
+              },
+              {
+                "heading": "Research in Indian Agriculture – Confronts and Achievements",
+                "descriptions": [
+                  {
+                    "pointLabel": "Indian agriculture faces daunting challenges. The constraints of low productivity in agriculture were realized and thus, central and state governments emphasized the need for accelerated development of agriculture. Despite national food surpluses, wide spread poverty and hunger remain because the growth of agriculture and the national economy have not adequately benefited the poor, policy reform alone will not be enough to increase agricultural growth and to make it more equitable. The policy reforms must be accompanied by appropriate and efficient investments in public goods such as rural infrastructure, irrigation, agricultural research and extension, and the education and health of rural people. India has proven in the past that agricultural growth can be success fully achieved with the right public investments, even when economy wide policies were unfavorable towards agriculture. Thus, India’s promise of the future lies in combining policy reform with the right levels and kinds of public investments."
+                  },
+                  {
+                    "pointLabel": "Technological change has been the main engine of agricultural growth in India. Strong empirical evidence provides support that high levels of R&D lead to high productivity and therefore improved economic performance. R&D was found to translate into significant rates of return in primary and service sectors, registering as high as 60 per cent [3]. The Total Factor Productivity (TFP) growth, which was the main driving force for the overall growth of agricultural output during 1980s in India, has started slowing down in recent years. Various authors have estimated growth in TFP of agriculture in India [4,5,6]. The growth rates range from 0.9 to 4.0. In few cases, there are negative growths also. The slowdown in TFP is a reflection of poor contribution by agricultural research and almost a near non-performance by public extension system."
+                  },
+                  {
+                    "pointLabel": "Indian policymakers have created one of the largest agricultural R&D systems in the world. The knowledge and technologies generated by investment in R&D was primarily responsible for the green revolution and achieving food security for the huge population. Despite success of green revolution, India still houses one-fourth of the world’s hungry and poor and 40 per cent of the world’s malnourished children and women [7]. The NSSO-2005 survey revealed that 40 per cent of the farmers would relinquish farming if provided alternate options. This is mainly because the economic viability of farming is threatened."
+                  }
+                ]
+              },
+              {
+                "heading": "Public Sector Research in Indian Agriculture",
+                "descriptions": [
+                  {
+                    "pointLabel": "Indian NARS has a huge scientific workforce of 21869 scientists [8] and ranks fourth in the world in terms of total investments in public R&D, following USA, Japan and China [9]. The positive impact of research can be seen from the decline in the real prices of food grains since green revolution. Many studies have established the high rates of return to agricultural research investment in India [10,11]."
+                  },
+                  {
+                    "pointLabel": "An examination of facts and figures clearly establishes that agricultural research during the second half the 20th century has been remarkably successful. The success of any organization depends largely on the commitment of people who work for the organization. A lion’s share of the funds go to salary and allowances of regular employees (about 75% of financial support provided by the state government) and, of the remaining 15 per cent, large part of it is used for meeting the operating costs. Only 10 per cent of the total budgetary provision is available for infrastructure which is hardly sufficient to meet the upkeep of the existing infrastructure. Obviously, modernization of research infrastructure is not moving forward at a pace, it is expected to move. The SAUs receive 60 to 70 per cent of the budget from the respective state governments; it covers three fourths of the salary of staff and the remaining part is met from ICAR and other sources. Though about 20 per cent of the funding comes from ICAR, almost 70 per cent is allocated under All India Coordinated Research Projects. The state government allocates 10-15 million annually under Part II Plan schemes exclusively meant for funding research projects of immediate importance or for creating specific infrastructure. This provision can also be reduced unexpectedly (in a financial year) by either the State Planning Commission whose approval is necessary for budgetary allocation or by Agricultural Secretary to accommodate other purposes within the agricultural ministry. Even-though the annual growth rate of research expenditure is estimated to be 7 per cent, the annual salary increments, increases in dearness allowance and rise in the cost of operating costs just compensate the enhanced budget. But, the growth in allocation to research in real terms is much smaller [12]."
+                  }
+                ]
+              },
+              {
+                "heading": "Private Sector Research in Indian Agriculture",
+                "descriptions": [
+                  {
+                    "pointLabel": "The private sector in India has also made large investments in research and development relevant to agriculture. This investment has increased rap idly over time. The amount of agricultural research and development in the private sector is now approximately half the amount in the public sector [4]."
+                  },
+                  {
+                    "pointLabel": "The national agricultural R&D system has undergone a structural transformation with the enlarged role of private sector during the past two decades. One of the significant developments is the entry of MNCs making a sizeable investment in research on seed, agrochemicals and agricultural machinery."
+                  },
+                  {
+                    "pointLabel": "The private sector investment in agricultural R&D has been accompanied by consolidation of chemical, seed and biotechnology companies. With the decontrol of regulations, the private research expenditure increased by 70 per cent between 1985 and 1995 [13] in India and the momentum is continuing. In the year 1991, private sector investment on research was only of 231.7 million and by 2009, the investment got multiplied by almost 14 times. The companies which have made investment in agricultural research fall in the categories of seeds, fertilizers, agrochemicals, agricultural machinery and sugar. While machinery, seeds, and agrochemicals categories have shown an increasing trend in R&D investment, fertilizer and sugar companies have not raised the level of research investment over the years."
+                  },
+                  {
+                    "pointLabel": "The liberalization of Indian economy since early 1990s has opened up opportunities for MNCs dealing with agro-inputs, seeds and agricultural machinery to expand their activities in India and many of them have launched joint ventures. Thus, the private sector agricultural research has achieved a credible performance contributing to increase in TFP in Indian agriculture. R&D on fertilizers can be categorized as one relating to fertilizer production and the other relating to consumption."
+                  },
+                  {
+                    "pointLabel": "On the production side, research comprises fertilizer production processes, product development, and market research and supply chain and is carried out by both public sector and private sector R&D units of the respective fertilizer manufacturing companies. Besides 9 large public sector fertilizer companies, 15 private sector fertilizer companies have established strong in-house R&D centres. Over the years, to ensure that it is well prepared to meet the challenges of fast-changing world and remain the market leader in the industry, the fertilizer R&D centres are involved in the in-depth surveys to understand the market demand and plan their production. These centres are spearheaded by highly qualified and experienced scientists; engineers and technologists."
+                  },
+                  {
+                    "pointLabel": "Now the emphasis of private sector R&D units of fertilizer companies is on creativity and ingenuity to develop products most suitable for the end-users. They are also seeking the recognition by the Department of Scientific and Industrial Research, Govt. of India and look for obtaining patents and allow the researchers to publish scientific papers. R&D in micro irrigation is getting priority in investment. Private companies having known the huge market ahead for micro irrigation are investing sizeable quantum of funds on R&D in micro irrigation."
+                  }
+                ]
+              },
+              {
+                "heading": "Returns and outcomes to the Research in Indian Agriculture",
+                "descriptions": [
+                  {
+                    "pointLabel": "The growth of TFP in Indian crop agriculture is associated predominantly with improved technology. With the advent of the Green Revolution, access to high yielding varieties and the associated public research system became the major sources for growth in TFP. The ease with which farmers could identify superior varieties reduced the role of extension."
+                  },
+                  {
+                    "pointLabel": "Private sector research and modern inputs were important during this period. The returns estimated for public agricultural research are high and consistent with evidence from other studies. The returns to investment in public sector agricultural research and extension programs are high far higher than the average returns from public sector investment in India. Several types of investments are associated with and contribute to TFP growth. Public agricultural research explains nearly 30 per cent of TFP growth between 1956 and 1987 and almost half of it since the Green Revolution [4]."
+                  },
+                  {
+                    "pointLabel": "Expansion in the private sector R&D has been motivated primarily by advances in biotechnology-strengthened IPRs, globalization of markets, and new opportunities to collaborate with public sector institutions. Recent years have witnessed a different story with more farmers using hybrid seeds of cotton, maize, millets, sunflower and vegetables with rice hybrid slowly picking up. The private sector strengthens their activities by sourcing breeder seed from ICAR and SAUs."
+                  },
+                  {
+                    "pointLabel": "The performance of private sector in seed production business has become superior as the private firms have been commercializing and marketing new varieties more efficiently through their networks than the public sector does. Fertilizer products are largely the outcome of R&D efforts of the private sector, particularly the MNCs. The consumption of chemical fertilizers has doubled in a period of fifteen years. The industry is developing fast in terms of using the latest world class technology in manufacturing processes to prepare innovative new products. For significant yield losses in food grains due to pests and non-essential herbs, agrochemicals application has proved to be an effective solution. The dynamics of product development in agro-chemicals show that newer and newer products are being introduced in the market due to technological advancements and competition."
+                  },
+                  {
+                    "pointLabel": "Leading national and multinational companies apart, a number of small sized companies are involved in production and sale of agro-inputs. For the production of inputs such as bio-pesticides, bio-manures, bio-fertilizers, small machinery and implements, the small companies source the technologies developed at the public research institutions. The continuous quest for higher productivity in the global agricultural markets has a direct effect on the demand for engine powered products. Private R&D develops current generation equipment providing farmers with all levels of power and higher efficiencies. The new models of machinery are expected to be more productive. Now, a number of databases are available and used for forecasting the models. Currently, there are about 19 tractor manufacturers in India (Agricultural Research Data Book, 2009)."
+                  },
+                  {
+                    "pointLabel": "Economic surplus approach was used to project the welfare benefits of adopting Bt eggplant in India, Bangladesh, and the Philippines [14]. The welfare benefits were estimated at $411 million, $37 million, and $28 million for India, Bangladesh and the Philippines, respectively. The distribution of the benefits for consumers and producers was about 57% and 43% of the total surplus respectively."
+                  },
+                  {
+                    "pointLabel": "Krishna and Qaim [15] examined the potential impacts of Bt eggplant on economic surplus and farmers’ health in India. They used the economic surplus model to project the welfare and distribution effects among eggplant farmers, consumers and the innovating company. Additionally to the economic surplus effects, the authors also estimated the potential impact of Bt eggplant technology on farmers’ health through reduced insecticide exposure. The authors employed econometric model to estimate the impact of insecticide sprays on pesticide poisonings. Simulations showed that the aggregate economic surplus gains of Bt hybrids could be around US $108 million year. The study found that consumers will capture a larger share of the gains, but farmers and the innovating company benefit too."
+                  },
+                  {
+                    "pointLabel": "Kumar et al. [16] examined the potential economic benefits of Bt brinjal hybrids in India in terms of yield gain, reduction in insecticide use and increase in net returns per hectare. The potential economic benefits of Bt brinjal and its distribution between producers and consumers have been estimated using the economic surplus method. The estimated showed that adoption of Bt brinjal could raise consumer surplus by Rs 381 crore and producer surplus by Rs 196 crore annually with adoption rate of 15 percent. The gains in economic surplus have been distributed between consumer and producer in the ratio of 66:34."
+                  }
+                ]
+              },
+              {
+                "heading": "Advancing Agricultural Innovation through Public-Private Partnerships",
+                "descriptions": [
+                  {
+                    "pointLabel": "Public–Private Partnerships (PPPs) in agricultural R&D are being increasingly viewed as an effective means of conducting advanced research, developing new technologies, and deploying new products for the benefit of small-scale, resource-poor farmers. PPP is any research collaboration between public and private sector entities in which partners jointly plan and execute activities with a view to accomplishing agreed upon objectives while sharing the costs, risks, and benefits incurred in the process. Public investment in productivity-enhancing agricultural R&D has been declining in most of the world outside China."
+                  },
+                  {
+                    "pointLabel": "Private investments and capability, on the other hand, continue to grow. These trends open up the need and opportunities for R&D partnerships that pool assets to farmers’ benefit. While the public sector provides strength in crop improvement, private organizations contribute expertise in plant sciences, genomics, bioinformatics, and the marketing and delivery of products and services. PPP in agricultural R&D is increasingly emerging as an effective means of conducting research in frontline areas of science and technology, commercializing new technologies, and deploying new products for the benefit of small-scale farmers, food-insecure consumers and other marginalized groups [17]. The partnerships offer a means of tapping the strengths of various partners and channelling knowledge and resources into areas where they can address complex development problems. The private sector plays a particularly critical role in spurring agricultural R&D, especially when combined with public sector initiatives within mature markets with strong intellectual property rights (IPR) to protect returns on investment. This synergetic effect enables returns on investment by taking advantage of the private sector’s technical expertise, and the public sector’s knowledge of local needs and networks [."
+                  }
+                ]
+              },
+              {
+                "heading": "Conclusion",
+                "descriptions": [
+                  {
+                    "pointLabel": "The future of Indian agriculture will be one of knowledge and technology intensive and wider dissemination of the same can not be accomplished in isolation. All categories of players, viz. public and private, and large and small must be involved in promoting the technologies. The agro-input industry has to closely work with government to realize the objectives. Policy environment must ensure a continuous encouragement to the private sector for attracting more investment. Mechanisms can be evolved for accreditation of private R&D, MOU for forging functional relationships and protocols for transferring/sharing technologies, materials and unique facilities. There is ample scope for intensifying human resource development through initiation of fellowships and professorial chairs by the private sector in focused areas of research. Private sector has a good amount of expertise which can be used in agricultural management process within NARS."
+                  }
+                ]
+              },
+              {
+                "heading": "References",
+                "descriptions": [
+                  {
+                    "pointsOrder": [
+                      "Planning Commission. Document of Eleventh Five Year Plan, 2007-12: 1. Inclusive Growth, Vol.1, (Chapter 1, p.1), and 2. Agriculture, Rural Development, Industries, Services and Physical Infrastructure, Vol. 4 (Chapter 1, p.1 and Chapter 4, p.79), Oxford University Press, New Delhi.",
+                      "Hazell P, Ramasamy C. The Green Revolution: Reconsidered. The Johns Hopkins University Press, Baltimore. 2009; 242 p.",
+                      "Cororaton CB. Rates of Return to R&D Investment in the Philippines, Philippine Institute for Development Studies, Makati City, 1998.",
+                      "Evenson RE, Pray C, Rosegrant MW. Agricultural Research and Productivity Growth in India, Research Report No. 109, International Food Policy Research Institute, Washington D.C, 1999.",
+                      "Kumar P, Anjani, Mittal S. Total productivity of crop sector in the Indo-Gangetic Plain and of India. Indian Econ Rev. 2004;39(1):169-201.",
+                      "Bhushan S. Total factor productivity growth of wheat in India: A malmquist approach. Indian J Agric Econ, 2005;60(2):198-210.",
+                      "NAAS, Agriculture Sector: Status and Performance, State of Indian Agriculture, National Academy of Agricultural Sciences, New Delhi, 2009.",
+                      "Jha D, Kumar S. Research Resource Allocation in Indian Agriculture, Policy Paper 23, National Centre for Agricultural Economics and Policy Research, New Delhi, 2006.",
+                      "Beintema, Nienke, Adhiguru P, BirthalPratap S, Bawa AK. 2008, Agricultural Research Investment in India, Policy Brief 27, NCAP, ICAR, New Delhi, 2008.",
+                      "Alston JM, Chan-Kang C, Mara MC, Pardey PG, Wyatt TJ. A Meta-Analysis of Rates of Return to Agricultural R&D: Ex pedeherculem?, IFPRI Research Report No. 113, Food Policy Research Institute, Washington D.C., 2000.",
+                      "Ramasamy C. 1997, Return to Research Investment in Agriculture, in Proceedings of International Workshop on Integrating Research Evaluation Efforts, edited by M.C.S. Bantilan and P.K. Joshi. ICRISAT, Patancheru.",
+                      "Ramasamy C. Indian Agricultural R&D: An Introspection and Way Forward. Agric Econ Res Rev. 2013; 26(1): 1-20.",
+                      "Pray CE, Fuglie KO. 2002, Private Investment in Agricultural Research and International Technology Transfer in Asia, International Potato Center, Rutgers University, and Economic Research Center, Bogor, Indonesia.",
+                      "Mishra S. 2003. An Ex-Ante Economic Impact Assessment of Bt Eggplant in Bangladesh, Philippines and India. M.S Thesis, Virginia Polytechnique Institute and State University, USA.",
+                      "Krishna VV. M Qaim. Potential Impacts of Bt Eggplant on Economic Surplus and Farmers Health in India. Selected Paper prepared for presentation at the 2007 AAEA, WAEA & CAES Joint Annual Meeting.",
+                      "Kumar S, PA Lakshmi Prasanna, S Wankhade. “Potential Benefits of BtBrinjal in India – An Economic Assessment. Agric Econ Res Rev. 2011;24:83-90.",
+                      "Pawar, Sarat (Union Minister for Agriculture, GOI) (2010) Inaugural Address: ICAR-Industry Meet, 28 July.",
+                      "Syngenta Foundation for Sustainable Agriculture (2012) Public Private Partnerships: Teamwork Achieves Many Goals, Brief Report, Basel, Switzerland."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Contact Us",
+      "route": "/user-home/contact-us",
+      "pageInfo": {
+        "header": "Contact Us",
+        "address": {
+          "header": "Office Address",
+          "locationimageUrl": "assets/images/location.svg",
+          "location": "Corporate office Hasiru Naadu Udupi",
+          "emailimageUrl": "assets/images/mail-2.svg",
+          "email": "hasirunaadu@gmail.com"
+        },
+        "emailUs": {
+          "header": "Email us",
+          "hasButton": true,
+          "buttonText": "Send"
+        }
+      }
+    },
+    {
+      "label": "Sign In",
+      "route": "/login"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "Hasriru Nadu",
+  "name": "Powered by Hasriru Nadu",
+  "icons": [
+    {
+      "src": "hasiru-nadu.svg",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#46c676",
+  "background_color": "#46c676"
+}
