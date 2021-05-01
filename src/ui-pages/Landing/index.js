@@ -56,7 +56,7 @@ const styles = {
     color: "#f05c5c",
   },
   toolbar: {
-    width: "30%"
+    width: "100%"
   },
   customTabSelected: {
     fontSize: "16px !important",
