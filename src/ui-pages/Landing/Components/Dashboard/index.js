@@ -14,15 +14,34 @@ const styles = (theme) => ({
 });
 
 class Dashboard extends React.Component {
-
+  state = {
+    name: ''
+  }
+  handleChange = (value) => {
+    // this.setState({name:value})
+    this.props.setAppData('dashboard.details.name', value);
+  }
   render() {
-    const { classes, setAppData } = this.props;
+    const { classes, setAppData, details } = this.props;
+    const { name } = details;
+    console.log('details:', details);
     return (
       <div className={classes.root}>
         <div>Dashboard</div>
+        <input
+          value={name}
+          onChange={(e) => { this.handleChange(e.target.value) }}
+
+        />
       </div>
     );
   }
 }
-
-export default connect(null, mapDispatchToProps)(withRouter(withStyles(styles)(Dashboard)));
+const mapStateToProps = ({ screenConfiguration }) => {
+  const { preparedFinalObject } = screenConfiguration;
+  const { dashboard } = preparedFinalObject;
+  const { details } = dashboard;
+  return { details:{...details} }
+}
+// export default connect(null, mapDispatchToProps)(withRouter(withStyles(styles)(Dashboard)));
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(withStyles(styles)(Dashboard)));
