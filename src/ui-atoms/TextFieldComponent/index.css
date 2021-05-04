@@ -1,0 +1,18 @@
+.paperRoot{
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .paperRooterror {
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid red;
+  }
+  .Input{
+    flex:1;
+    color:black;
+    font-size: 14;
+  }

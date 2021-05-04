@@ -11,6 +11,10 @@ const intialState = {
       variant: "success",
       message: ""
     },
+    login:{
+      userName:"",
+      password:""
+    },
     spinner: false,
     selectedLanguage: window.localStorage.getItem("selectedLanguage") || "en"
   },
