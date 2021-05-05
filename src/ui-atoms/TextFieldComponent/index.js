@@ -1,12 +1,9 @@
 import React from 'react';
 import './index.css';
-import { IconButton, InputAdornment } from '@material-ui/core';
-//import { Visibility, VisibilityOff } from '@material-ui/icons';
-
 
 class TextFieldComponent extends React.Component {
-    state={
-        showPassword:false
+    state = {
+        showPassword: false
     }
     render() {
         const {
@@ -16,44 +13,31 @@ class TextFieldComponent extends React.Component {
             type,
             fullwidth,
             classes,
-            isValid=false,
-            hasEndAdornment = false,
             adormentPosition,
             icon,
             rootCss,
+            iconPosition,
+            errorMessage,
+            hasError,
             ...rest
         } = this.props;
-        console.log("is valid", isValid);
         return (
-            //<div className={isValid ? "paperRoot" : "paperRooterror"}>
+            <div className={"input-icons"}>
+                <div className={iconPosition}>{icon}</div>
                 <input
-                className="input"
-                type={
-                  type === "password" ? (this.showPassword ? "text" : "password") : type
-                }
+                    type={
+                        type === "password" ? (this.showPassword ? "text" : "password") : type
+                    }
                     value={fieldValue}
                     onChange={handleChange}
                     placeholder={placeholder}
                     fullwidth={fullwidth}
                     className={rootCss}
-
-                    // inputLabelProps={{ className: classes.input }}
+                    autoComplete={'false'}
                     {...rest}
-                // endAdornment={
-                //     hasEndAdornment && (
-                //         <InputAdornment position={adormentPosition}>
-                //             <IconButton
-                //                 aria-label="Toggle password visibility"
-                //                 onClick={this.handleClickShowPassword}
-                //             >
-                //                 {icon}
-                //             </IconButton>
-                //         </InputAdornment>
-                //     )
-                // }
                 />
-
-           // </div>
+                {hasError && <span className={"error-message"}>{errorMessage}</span>}
+            </div>
 
 
         );

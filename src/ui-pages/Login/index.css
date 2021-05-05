@@ -1,17 +1,16 @@
 .root{
-    width: 99%;
-    border: 5px solid white;
-    height: 93%;
-    display: flex;
-    overflow: hidden;
-    position: fixed;
-    background-size: cover;
-    justify-content: center;
-    background-color: #3F8394;
-    border-bottom-width: 130px;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-}
+  width: 98%;
+  border: 5px solid white;
+  height: 95%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  background-color: #3F8394;
+  border-bottom-width: 450px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  }
 .bg {
     /* background: #1e7979; */
     background-size: cover;
@@ -36,10 +35,10 @@
     transform: translateX(-50%);
   }
   .textField{
-    width:100%;
+    padding: 10px 40px 10px 10px;
+    height: 40px;
+    text-align: start;
     border: 2px solid #0a546d;
-    margin: 15px 0px;
-    padding: 14px 4px;
     font-size: initial;
     border-left: none;
     border-radius: 0px 50px 50px 0px;
@@ -60,11 +59,9 @@
     border-color: red;
   }
   .textField1{
-    width: 100%;
-    color: white;
     border: 2px solid #fff;
-    margin: 15px 0px;
-    padding: 14px 4px;
+    height: 40px;
+    padding: 10px 60px 10px 60px;
     font-size: initial;
     border-color: white;
     border-right: none;
@@ -72,11 +69,11 @@
     border-radius: 50px 0px 0px 50px;
   }
   .textField1::placeholder{
-    color:#fff;
+    color:#244C7C;
     text-align: center;
     font-size: larger;
     font-style: italic;
-}
+  }
   .textField1:focus{
     border: 2px solid #fff;
     border-right: none;
@@ -96,13 +93,36 @@
     font-size: 28px;
     font-weight:600;
     opacity: 0.8;
-}
-.button1:hover{
-    opacity: 1;
-}
-/* .button1:focus{
-
-} */
-.errorMessage{
-  color: red;
-}
+  }
+  .button1:hover{
+      opacity: 1;
+  }
+  .errorMessage{
+    color: red;
+  }
+  .textField:-internal-autofill-selected {
+    background-color:#3F8394 ;
+    color: #000;
+  }
+  .textField1:-internal-autofill-selected {
+    background-color:#3F8394 ;
+    color: #000;
+  }
+  .input-icon-left {
+    position: absolute;
+    padding: 10px 10px;
+  }
+  .input-icon-right {
+    position: absolute;
+    padding: 10px 10px;
+    right: 10%;
+  }
+  .header{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 16px;
+    color: #0F4C7C;
+    text-align: center;
+    font-family: 'Poppins';
+  }
