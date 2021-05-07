@@ -23,7 +23,7 @@ const MainRoutes = () => {
       <Route path="/user-home" component={Landing} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
-      <Redirect to="/user-home/dashboard" />
+      <Redirect to="/login" />
     </div>
   )
 }
