@@ -7,7 +7,8 @@ import TextFieldComponent from "../../ui-atoms/TextFieldComponent";
 import ButtonComponent from "../../ui-atoms/ButtonComponent";
 import './index.css';
 
-const styles = (theme) => ({
+
+/*const styles = (theme) => ({
   button1: {
     //variant="extended",
     marginLeft: "10%",
@@ -29,108 +30,45 @@ const styles = (theme) => ({
      color: "white"
    }
 
-});
+});*/
 
-class Signup extends React.Component {
-  constructor() {
-    super();
+class Register extends React.Component {
+  constructor(props){
+    super(props);
     this.state = {
-      input: {},
+      data: {
+        userName: '',
+        emailId: '',
+        phoneNumber: '',
+        password: '',
+        confirmPassword: ''
+      },
       errors: {}
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    }
   }
 
-  handleChange(event) {
-    let input = this.state.input;
-    input[event.target.userName] = event.target.value;
-
+  handleChange = (e) => {
     this.setState({
-      input
+      data: {
+        ...this.state.data,
+        [e.target.userName]: e.target.value
+      }
     });
   }
-  handleSubmit(event) {
-    event.preventDefault();
+
+  validate = () => {
+    const { data } = this.state; 
+    let errors = {}; 
   
-    if(this.validate()){
-        console.log(this.state);
-  
-        let input = {};
-        input["username"] = "";
-        input["emailId"] = "";
-        input["phoneNumber"] = "";
-        input["password"] = "";
-        input["confirmPassword"] = "";
-        this.setState({input:input});
-  
-        alert('Form is submited');
-    }
   }
-  validate(){
-      let input = this.state.input;
-      let errors = {};
-      let isValid = true;
-  
-      if (!input["userName"]) {
-        isValid = false;
-        errors["userName"] = "Please enter your name.";
-      }
-  
-      if (!input["emailId"]) {
-        isValid = false;
-        errors["emailId"] = "Please enter your email Address.";
-      }
-  
-      if (typeof input["emailId"] !== "undefined") {
-          
-        var pattern = new RegExp(‘@’);
-        if (!pattern.test(input["email"])) {
-          isValid = false;
-          errors["emailId"] = "Please enter valid email address.";
-        }
-      }
-  
-      if (!input["phoneNumber"]) {
-        isValid = false;
-        errors["phoneNumber"] = "Please enter your phone number.";
-      }
-  
-      if (typeof input["phoneNumber"] !== "undefined") {
-          
-        var pattern = new RegExp(‘0-9’);
-        if (!pattern.test(input["phoneNumber"])) {
-          isValid = false;
-          errors["phoneNumber"] = "Please enter only number.";
-        }else if(input["phone"].length != 10){
-          isValid = false;
-          errors["phoneNumber"] = "Please enter valid phone number.";
-        }
-      }
+  handleSubmit = (e) => {
+    e.preventDefault();
 
-      if (!input["password"]) {
-        isValid = false;
-        errors["password"] = "please enter your password";
-      }
+    const { data } = this.state;
 
-      if (!input["confirmPassword"]){
-        isValid = false;
-        errors["confirmPassword"] = "please enter your password";
-      }
-
-      if (typeof input["password"] !== "undefined" && typeof input["confirmPassword"] !== "undefined") {
-
-        if (input["password"] != input["confirmPassword"]) {
-          isValid = false;
-          errors["password"] = "password dont match";
-        }
-      }
-      this.setState({
-        errors:errors
-      });
-      return isValid;
-    }
-      
+    console.log(data);
+  }
+    
      
   render() {
     const { setAppData, userName, emailId, phoneNumber,password, confirmPassword } = this.props;
@@ -144,43 +82,43 @@ class Signup extends React.Component {
           <div>
             <TextFieldComponent
               rootCss={"textField"}
-              value={this.state.input.userName}
+              value={userName}
               handleChange={(e) => { setAppData('signup.userName', e.target.value) }}
               hasEndAdornment={true}
               placeholder={"User Name"}
-              adormentPosition={"right"}
+              adornmentPosition={"right"}
               icon={<span class="material-icons">person</span>}
               onChange={this.handleChange}
             />
-            <div className="text-danger" >{this.state.errors.userName}</div>
+
           </div>
           
           <div>
             <TextFieldComponent
               rootCss={"textField1"}
-              value={this.state.input.emailId}
+              value={emailId}
               handleChange={(e) => { setAppData('signup.emailId', e.target.value) }}
               hasEndAdornment={true}
               placeholder={"Email ID"}
-              adormentPosition={"right"}
+              adornmentPosition={"right"}
               icon={<span class="material-icons">mail</span>}
               onChange={this.handleChange}
             />
-             <div className="text-danger" >{this.state.errors.emailId}</div>
+             
           </div>
 
           <div>
             <TextFieldComponent
               rootCss={"textField2"}
-              value={this.state.input.phoneNumber}
+              value={phoneNumber}
               handleChange={(e) => { setAppData('signup.phoneNumber', e.target.value) }}
               hasEndAdornment={true}
               placeholder={"Phone Number"}
-              adormentPosition={"right"}
+              adornmentPosition={"right"}
               icon={<span class="material-icons">phone</span>}
               onChange={this.handleChange}
             />
-              <div className="text-danger" >{this.state.errors.phoneNumber}</div>
+              
           </div>
           <div>
             <TextFieldComponent
@@ -192,7 +130,7 @@ class Signup extends React.Component {
               icon={<span class="material-icons">lock</span>}
               onChange={this.handleChange}
             />
-              <div className="text-danger" >{this.state.errors.password}</div>
+              
           </div>
           <div>
             <TextFieldComponent
@@ -202,25 +140,26 @@ class Signup extends React.Component {
               placeholder={"Confirm Password"}
               handleChange={(e) => { setAppData('signup.confirmPassword', e.target.value) }}
               icon={<span class="material-icons">lock</span>}
-              onChange={this.handleChange}
+              onChange={this.handleSubmit}
               adormentPosition={"end"}
             />
-              <div className="text-danger" >{this.state.errors.confirmPassword}</div>
+              
           </div>
           <div>
            <ButtonComponent
                 rootCss={"button1"}
-                value={"Signup"}
+                value={"signup"}
                 color={"blue"}
                 onClick={this.handleSubmit}
-                variant={"login"}
+                variant={"signup"}
                 text
               />
           </div>
         </div>
       </div>
+      
     );
-  }	
+  }
 }
 const mapStateToProps = ({ screenConfiguration }) => {
   const { preparedFinalObject = {} } = screenConfiguration;
@@ -228,6 +167,4 @@ const mapStateToProps = ({ screenConfiguration }) => {
   const { userName, emailId,phoneNumber, password, confirmPassword } = signup;
   return { userName, emailId,phoneNumber, password, confirmPassword }
 }
-export default connect(null, mapDispatchToProps)(withRouter(withStyles(styles)(Signup)));
-
-
+export default connect(null, mapDispatchToProps)(withRouter(withStyles(styles)(Register)));
