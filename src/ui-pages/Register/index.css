@@ -1,4 +1,4 @@
-.root{
+.register_root{
     width: 100%;
     border: 5px solid white;
     height: 93%;
@@ -11,7 +11,7 @@
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }
-.bg {
+.register_bg {
     /* background: #1e7979; */
     background-size: cover;
     -webkit-background-size: cover;
@@ -22,7 +22,7 @@
     position: relative;
     /*below show how it works*/
   }
-  .bg::after{
+  .register_bg::after{
     content: "";
     width: 100%;
     height: 0;
@@ -34,7 +34,7 @@
     
     transform: translateX(-50%);
   }
-  .textField{
+  .register_textField{
     width:100%;
     border: 2px solid #0a546d;
     margin: 15px 0px;
@@ -46,15 +46,15 @@
     font-style: italic;
     font-size: 160%;
   }
-  .textField:focus{
+  .register_textField:focus{
     border: 2px solid #0a546d;
     border-left: none;
     outline-width: o;
   }
-  .textField::placeholder{
+  .register_textField::placeholder{
       color: #0d468b;
   }
-  .textField1{
+  .register_textField1{
     width: 100%;
     color: white;
     border: 2px solid #fff;
@@ -69,15 +69,15 @@
     border-radius: 50px 0px 0px 50px;
     text-align: end;
   }
-  .textField1::placeholder{
+  .register_textField1::placeholder{
     color: #fff;
 }
-  .textField1:focus{
+  .register_textField1:focus{
     border: 2px solid rgb(231, 228, 228);
     border-right: none;
     outline-width: 0;
   }
-  .textField2{
+  .register_textField2{
     width:100%;
     border: 2px solid #fff;
     color: white;
@@ -90,15 +90,15 @@
     font-size: 160%;
     font-style: italic;
   }
-  .textField2:focus{
+  .register_textField2:focus{
     border: 2px solid #fff;
     border-left: none;
     outline-width: o;
   }
-  .textField2::placeholder{
+  .register_textField2::placeholder{
       color: #fff;
   }
-  .textField3{
+  .register_textField3{
     width: 100%;
     color: white;
     border: 2px solid #fff;
@@ -113,16 +113,16 @@
     font-style: italic;
     text-align: end;
   }
-  .textField3::placeholder{
+  .register_textField3::placeholder{
     color: #fff;
 }
-  .textField3:focus{
+  .register_textField3:focus{
     border: 2px solid #fff;
     border-right: none;
     outline-width: 0;
     text-align: center;
   }
-  .textField4{
+  .register_textField4{
     width:100%;
     border: 2px solid #fff;
     margin: 15px 0px;
@@ -136,19 +136,19 @@
     font-style: italic;
     align-items: center;
   }
-  .textField4:focus{
+  .register_textField4:focus{
     border: 2px solid #fff;
     border-left: none;
     outline-width: o;
     
   }
-  .textField4::placeholder{
+  .register_textField4::placeholder{
       color: #fff;
   }
-  .button1 {
+  .register_button1 {
     width: 70%;
     height: 60px;
-    background-color: #004C99;
+    background-color: #0F4C7C;
     border-radius: 300px;
     border: none;
     color: white;
@@ -163,7 +163,8 @@
     font-style: italic;
     margin-left: 10%;
 }
-.button1:hover{
+.register_button1:hover{
     opacity: 5;
+    background: #0F4C7C;
 }
 
