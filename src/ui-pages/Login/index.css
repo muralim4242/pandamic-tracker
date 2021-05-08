@@ -1,4 +1,4 @@
-.root{
+.login_root{
   width: 98%;
   border: 5px solid white;
   height: 95%;
@@ -11,7 +11,7 @@
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   }
-.bg {
+.login_bg {
     background-size: cover;
     -webkit-background-size: cover;
     width: 100%;
@@ -20,7 +20,7 @@
     position: relative;
    
   }
-  .bg::after{
+  .login_bg::after{
     content: "";
     width: 200%;
     height: 0;
@@ -31,7 +31,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  .textField{
+  .login_textField{
     padding: 10px 40px 10px 10px;
     height: 40px;
     text-align: start;
@@ -41,21 +41,21 @@
     border-radius: 0px 50px 50px 0px;
     background: #3F8394;
   }
-  .textField:focus{
+  .login_textField:focus{
     border: 2px solid #0a546d;
     border-left: none;
     outline-width: 0;
   }
-  .textField::placeholder{
+  .login_textField::placeholder{
       color: #244C7C;
       text-align: center;
       font-size: larger;
       font-style: italic;
   }
-  .textField:invalid{
+  .login_textField:invalid{
     border-color: red;
   }
-  .textField1{
+  .login_textField1{
     border: 2px solid #fff;
     height: 40px;
     padding: 10px 60px 10px 60px;
@@ -65,18 +65,18 @@
     background: #3F8394;
     border-radius: 50px 0px 0px 50px;
   }
-  .textField1::placeholder{
+  .login_textField1::placeholder{
     color:#244C7C;
     text-align: center;
     font-size: larger;
     font-style: italic;
   }
-  .textField1:focus{
+  .login_textField1:focus{
     border: 2px solid #fff;
     border-right: none;
     outline-width: 0;
   }
-  .button1 {
+  .login_button1 {
     width: 100%;
     background-color: #244C7C;
     border-radius: 300px;
@@ -91,17 +91,17 @@
     font-weight:600;
     opacity: 0.8;
   }
-  .button1:hover{
+  .login_button1:hover{
       opacity: 1;
   }
   .errorMessage{
     color: red;
   }
-  .textField:-internal-autofill-selected {
+  .login_textField:-internal-autofill-selected {
     background-color:#3F8394 ;
     color: #000;
   }
-  .textField1:-internal-autofill-selected {
+  .login_textField1:-internal-autofill-selected {
     background-color:#3F8394 ;
     color: #000;
   }
@@ -112,7 +112,7 @@
   .input-icon-right {
     position: absolute;
     padding: 10px 10px;
-    right: 10%;
+    right: 0;
   }
   .header{
     font-size: 32px;
