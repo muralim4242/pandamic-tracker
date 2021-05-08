@@ -1,7 +1,7 @@
 .login_root{
-  width: 98%;
-  border: 5px solid white;
-  height: 95%;
+  width: 96vw;
+  border-bottom: 5px solid white;
+  height: 95vh;
   display: flex;
   position: fixed;
   justify-content: center;
