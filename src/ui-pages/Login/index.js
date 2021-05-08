@@ -25,7 +25,7 @@ const styles = (theme) => ({
     padding: "8px 24px",
     margin: "8px",
     flexDirection: "column",
-    cursor: "pointer"
+    cursor: "pointer",
   },
   // paperBackground:{
   //   background:"rgba(255,255,255,0.7)"
@@ -33,7 +33,6 @@ const styles = (theme) => ({
 });
 
 class Login extends React.Component {
-
   render() {
     const { classes, setAppData } = this.props;
     return (
@@ -44,9 +43,10 @@ class Login extends React.Component {
   }
 }
 
-export default connect(null, mapDispatchToProps)(withRouter(withStyles(styles)(Login)));
-
-
+export default connect(
+  null,
+  mapDispatchToProps
+)(withRouter(withStyles(styles)(Login)));
 
 // <form
 //   noValidate
