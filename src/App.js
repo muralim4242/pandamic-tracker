@@ -6,13 +6,12 @@ import MainRoutes from "./ui-routes/MainRoutes";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import Loader from "./ui-molecules/Loading";
-import isEmpty from "lodash/isEmpty";
 import "./App.css";
 
 class App extends React.Component {
 
   render() {
-    const { spinner, appConfig } = this.props;
+    const { spinner } = this.props;
     return (
       <div>
         <MainRoutes />

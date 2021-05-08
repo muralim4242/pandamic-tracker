@@ -1,99 +1,91 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { mapDispatchToProps } from "../../ui-utils/commons";
+import TextFieldComponent from "../../ui-atoms/TextFieldComponent";
+import ButtonComponent from "../../ui-atoms/ButtonComponent";
+import LockRoundedIcon from '@material-ui/icons/LockRounded';
+import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
+import './index.css';
+import { Typography } from "@material-ui/core";
 
-const styles = (theme) => ({
-  root: {
-    display: "flex",
-    height: "100vh",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  paperRoot: {
-    [theme.breakpoints.down("sm")]: {
-      width: "50%",
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: "80%",
-    },
-    width: "25%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "8px 24px",
-    margin: "8px",
-    flexDirection: "column",
-    cursor: "pointer"
-  },
-  // paperBackground:{
-  //   background:"rgba(255,255,255,0.7)"
-  // }
-});
 
 class Login extends React.Component {
+  state = {
+    errors: {},
+    loader: true
+  }
 
+  validateLogin = (userName, password) => {
+    let formIsValid = true;
+    let errors = {};
+    if (!userName || userName === "") {
+      formIsValid = false;
+      errors["userName"] = "username is invalid";
+    }
+    if (!password || password === "") {
+      formIsValid = false;
+      errors["password"] = "password is invalid";
+    }
+    this.setState({
+      errors: errors
+    });
+    return formIsValid;
+  }
+
+  handleLogin = () => {
+    const { userName, password } = this.props;
+    if (this.validateLogin(userName, password)) {
+      this.setState({ loader: true });
+    }
+  }
   render() {
-    const { classes, setAppData } = this.props;
+    const {  setAppData, userName, password } = this.props;
     return (
-      <div className={classes.root}>
-        <div>Login</div>
+      <div className={"root"}>
+        <form style={{ width: "80%" }} onClick={() => { this.handleLogin() }}>
+        <Typography component={"h2"} className={"header"}>Login</Typography>
+          <TextFieldComponent
+            className="textField"
+            icon={<PersonRoundedIcon style={{ fontSize: "44px", color: "#0F4C7C" }} />}
+            iconPosition={"input-icon-right "}
+            type="text"
+            value={userName}
+            hasError={!userName || !this.state.errors.userName ? true : false}
+            errorMessage={this.state.errors.userName}
+            placeholder={"User Name"}
+            handleChange={(e) => { setAppData('login.userName', e.target.value) }}
+            fullwidth={"true"}
+          />
+          <TextFieldComponent
+            rootCss={"textField1"}
+            value={password}
+            icon={<LockRoundedIcon style={{ fontSize: "44px", color: "#fff" }} />}
+            iconPosition={"input-icon-left"}
+            placeholder={"Password"}
+            hasError={!password || !this.state.errors.password ? true : false}
+            errorMessage={this.state.errors.password}
+            handleChange={(e) => { setAppData('login.password', e.target.value) }}
+            fullwidth={"true"}
+            type={"password"}
+          />
+          <div>
+            <ButtonComponent
+              rootCss={"button1"}
+              value={"Login"}
+              color={"blue"}
+              type={"submit"}
+            />
+          </div>
+        </form>
       </div>
     );
   }
 }
-
-export default connect(null, mapDispatchToProps)(withRouter(withStyles(styles)(Login)));
-
-
-
-// <form
-//   noValidate
-//   autoComplete="off"
-//   className="custom-width-100-per"
-// >
-//   <TextField
-//     id="username"
-//     label="Email id / Phone Number"
-//     fullWidth
-//   />
-//   <TextField
-//     id="password"
-//     label="Password"
-//     type="password"
-//     fullWidth
-//   />
-//   {/*<div className="custom-flex-row">
-//     <FormControlLabel
-//       control={<Checkbox checked={false} name="checkedA" />}
-//       label="Remember me"
-//     />
-//     <Typography color="primary" variant="body1">
-//       Forgot password?
-//     </Typography>
-//   </div>*/}
-//   <Button
-//     classes={{ root: "custom-margin-tp-16-px" }}
-//     fullWidth
-//     color="primary"
-//     variant="contained"
-//   >
-//     {" "}
-//     Sign In
-//   </Button>
-//   <div className="custom-flex-row-left custom-width-100-per custom-margin-tp-8-px custom-margin-bp-16-px">
-//     <Typography variant="body1">Don't have an account?</Typography>
-//     <Typography
-//       onClick={(e) => {
-//         this.props.history.push("/register");
-//       }}
-//       color="primary"
-//       variant="body1"
-//       align="right"
-//       classes={{ root: "custom-pointer" }}
-//     >
-//       Sign Up
-//     </Typography>
-//   </div>
-// </form>
+const mapStateToProps = ({ screenConfiguration }) => {
+  const { preparedFinalObject = {} } = screenConfiguration;
+  const { login } = preparedFinalObject;
+  const { userName, password } = login;
+  return { userName, password }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter((Login)));
