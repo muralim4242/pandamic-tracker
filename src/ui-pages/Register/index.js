@@ -63,7 +63,7 @@ class Register extends React.Component {
   render() {
     const { setAppData, userName, emailId, phoneNumber, password, confirmPassword } = this.props;
     return (
-      <div className={"register_oot"}>
+      <div className={"register_root"}>
         <div style={{ width: "350px" }}>
           <div style={{ justifyContent: "center", display: "flex", color: "#0F4C7C", fontStyle: "italic" }}>
             <h1>Signup</h1>
