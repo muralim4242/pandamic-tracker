@@ -16,7 +16,7 @@ const styles = (theme) => ({
 
 class Dashboard extends React.Component {
   render() {
-    const { classes, setAppData } = this.props;
+    const { classes } = this.props;
     return (
       <div className={classes.root}>
         <div>Dashboard</div>

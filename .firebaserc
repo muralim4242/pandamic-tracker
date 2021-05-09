@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "hasirunaadu-13736"
+    "default": "pandamic-tracker",
+    "staging": "pandamic-tracker",
+    "build": "pandamic-tracker"
   }
 }
