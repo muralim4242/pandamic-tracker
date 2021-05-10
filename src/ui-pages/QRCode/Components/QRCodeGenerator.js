@@ -3,8 +3,8 @@ import React, { Component } from "react";
 
 function QRCodeGenerator() {
   return (
-    <div className="qrcode">
-      <QRCode value='1234' size = {180} />;
+    <div className="qrdiv">
+      <QRCode value="1234" size={180} />;
     </div>
   );
 }

@@ -1,25 +1,5 @@
-.qrpage {
-  width: 30%;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  border: 2px solid rgb(240, 233, 233);
-  height: 650px;
+
+.qrdiv {
+  text-align: center !important;
 }
 
-.qrpage > .qrcode {
-  width: 40%;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 148.01px;
-  max-width: 500px;
-}
-
-.footer {
-  width: 100.5%;
-  height: 50px;
-  background-color: rgba(245, 235, 235, 0.993);
-  border-top: 1px solid rgba(219, 214, 214, 0.863);
-}
