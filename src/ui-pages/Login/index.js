@@ -10,6 +10,7 @@ import './index.css';
 import { Typography } from "@material-ui/core";
 
 
+
 class Login extends React.Component {
   state = {
     errors: {},
@@ -39,6 +40,7 @@ class Login extends React.Component {
       this.setState({ loader: true });
     }
   }
+
   render() {
     const { setAppData, userName, password } = this.props;
     return (
@@ -82,6 +84,7 @@ class Login extends React.Component {
     );
   }
 }
+
 const mapStateToProps = ({ screenConfiguration }) => {
   const { preparedFinalObject = {} } = screenConfiguration;
   const { login } = preparedFinalObject;
