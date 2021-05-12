@@ -1,0 +1,11 @@
+.root1{
+    width:100%;
+    height:100%;
+    background-color: rgb(177, 29, 29);
+}
+
+.list {
+    width: 250px;
+    height: 100vh;
+    background-color: #2998d4;
+  }

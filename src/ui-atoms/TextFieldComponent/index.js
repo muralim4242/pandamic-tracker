@@ -1,3 +1,4 @@
+import { TextField } from '@material-ui/core';
 import React from 'react';
 import './index.css';
 
@@ -19,11 +20,16 @@ class TextFieldComponent extends React.Component {
             iconPosition,
             errorMessage,
             hasError,
+            maxlength,
+            minlength,
+            hasButton,
+            handleOnClick,
             ...rest
         } = this.props;
         return (
             <div className={"input-icons"}>
-                <div className={iconPosition}>{icon}</div>
+                <div className={iconPosition}> {hasButton ? 
+                <button className="iconButton"  onClick= {handleOnClick}> {icon}</button> :icon  }</div>
                 <input
                     type={
                         type === "password" ? (this.showPassword ? "text" : "password") : type
@@ -34,6 +40,7 @@ class TextFieldComponent extends React.Component {
                     fullwidth={fullwidth}
                     className={rootCss}
                     autoComplete={'false'}
+                    iconPosition={iconPosition}
                     {...rest}
                 />
                 {hasError && <span className={"error-message"}>{errorMessage}</span>}

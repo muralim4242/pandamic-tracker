@@ -3,17 +3,31 @@ import { prepareFinalObject } from "./utils";
 
 const intialState = {
   preparedFinalObject: {
-    appConfig:{
-      menus:[]
+    appConfig: {
+      menus: []
     },
     snackbar: {
       open: false,
       variant: "success",
       message: ""
     },
-    login:{
-      userName:"",
-      password:""
+    dashboard: {
+      appbarName: ""
+    },
+    login: {
+      userName: "",
+      password: ""
+    },
+    register: {
+      select_type: "",
+      vehicle_number: "",
+      name: "",
+      phone_number: "",
+      address: "",
+      email: ""
+    },
+    sidebar_transport:{
+      
     },
     spinner: false,
     selectedLanguage: window.localStorage.getItem("selectedLanguage") || "en"
