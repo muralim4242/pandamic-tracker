@@ -1,155 +1,146 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { mapDispatchToProps } from "../../ui-utils/commons";
-import './index.css';
-import InputField from "../../ui-atoms/InputField";
+import InputField from '../../ui-atoms/InputField/InputField';
 import ButtonComponent from "../../ui-atoms/ButtonComponent";
+import LockRoundedIcon from '@material-ui/icons/LockRounded';
+import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
+import './index.css';
+import { Typography } from "@material-ui/core";
+import MailRoundedIcon from '@material-ui/icons/MailRounded';
+import PhoneRoundedIcon from '@material-ui/icons/PhoneRounded';
 
 
-const styles = (theme) => ({
-  button1: {
-    //variant="extended",
-    marginLeft: "10%",
-    marginend: "20%",
-    display: "flex",
-    // width: "100%",
-    background: "url('https://firebasestorage.googleapis.com/v0/b/hasirunaadu-13736.appspot.com/o/hasiru-naadu-images%2Fbanner_compressed.jpeg?alt=media&token=90d42358-bb2b-4d05-8e33-a6f6fef16b8e')",
-    height: "100vh",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "column"
-  },
-  icon: {
-    position: "left",
-    left: "33%",
-    color: "white"
-  }
-
-});
 
 class Register extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: {
-        userName: '',
-        emailId: '',
-        phoneNumber: '',
-        password: '',
-        confirmPassword: ''
-      },
-      errors: {}
+  state = {
+    errors: {},
+    loader: true
+  }
+
+  validateRegister = (userName, emailId, phoneNumber, password, confirmPassword) => {
+    let formIsValid = true;
+    let errors = {};
+
+    if (!userName || userName === "") {
+      formIsValid = false;
+      errors["userName"] = "userName is invalid";
+    }
+    if (!emailId || emailId === "") {
+      formIsValid = false;
+      errors["emailId"] = "emailId is invalid";
+    }
+    if (!phoneNumber || phoneNumber === "") {
+      formIsValid = false;
+      errors["phoneNumber"] = "phoneNumber is invalid";
+    }
+    if (!password|| password === "") {
+      formIsValid = false;
+      errors["password"] = "password is invalid";
+    }
+    if (!confirmPassword || confirmPassword === "") {
+      formIsValid = false;
+      errors["confirmPassword"] = "password is invalid";
+    }
+    this.setState({
+      errors: errors
+    });
+    return formIsValid;
+  }
+
+  handleRegister = () => {
+    const { userName,emailId, phoneNumber, password, confirmPassword } = this.props;
+    if (this.validateRegister( userName,emailId, phoneNumber, password, confirmPassword )) {
+      this.setState({ loader: true });
     }
   }
-
-  // handleChange = (e) => {
-  //   this.setState({
-  //     data: {
-  //       ...this.state.data,
-  //       [e.target.userName]: e.target.value
-  //     }
-  //   });
-  // }
-
-  validate = () => {
-    // const { data } = this.state;
-    // let errors = {};
-
-  }
   render() {
-    const { setAppData, userName, emailId, phoneNumber, password, confirmPassword } = this.props;
+    const { setAppData, userName, emailId, phoneNumber, password, confirmPassword} = this.props;
     return (
-      <div className={"register_oot"}>
-        <div style={{ width: "350px" }}>
-          <div style={{ justifyContent: "center", display: "flex", color: "#0F4C7C", fontStyle: "italic" }}>
-            <h1>Signup</h1>
-          </div>
+      <div className={"register_root"}>
+        <form onClick={() => { this.handleRegister() }}>
+          <Typography component={"h1"} className={"header"}>Signup</Typography>
+          <InputField
+            rootCss={"register_textField"}
+            value={userName}
+            icon={<PersonRoundedIcon style={{ fontSize: "44px", color: "#0F4C7C" }} />}
+            iconPosition={"input-icon-right "}
+            type={"text"}
+            hasError={!userName || !this.state.errors.userName ? true : false}
+            errorMessage={this.state.errors.userName}
+            placeholder={"User Name"}
+            handleChange={(e) => { setAppData('register.userName', e.target.value) }}
+            fullwidth={"true"}
+          />
 
-          <div>
-            <InputField
-              rootCss={"register_textField"}
-              value={userName}
-              handleChange={(e) => { setAppData('signup.userName', e.target.value) }}
-              hasEndAdornment={true}
-              placeholder={"User Name"}
-              adornmentPosition={"end"}
-              icon={<span className="material-icons">person</span>}
-            />
 
-          </div>
-
-          <div>
-            <InputField
-              rootCss={"register_textField1"}
-              value={emailId}
-              handleChange={(e) => { setAppData('signup.emailId', e.target.value) }}
-              hasstartAdornment={true}
-              placeholder={"Email ID"}
-              adornmentPosition={"end"}
-              icon={<span className="material-icons">mail</span>}
-            />
-
-          </div>
-
-          <div>
-            <InputField
-              rootCss={"register_textField2"}
-              value={phoneNumber}
-              handleChange={(e) => { setAppData('signup.phoneNumber', e.target.value) }}
-              hasEndAdornment={true}
-              placeholder={"Phone Number"}
-              adornmentPosition={"end"}
-              icon={<span className="material-icons">phone</span>}
-            />
-
-          </div>
-          <div>
-            <InputField
-              rootCss={"register_textField3"}
-              value={password}
-              handleChange={(e) => { setAppData('signup.password', e.target.value) }}
-              hasstartAdornment={true}
-              placeholder={"Password"}
-              icon={<span className="material-icons">lock</span>}
-            />
-
-          </div>
-          <div>
-            <InputField
-              rootCss={"register_textField4"}
-              hasEndAdornment={true}
-              value={confirmPassword}
-              placeholder={"Confirm Password"}
-              handleChange={(e) => { setAppData('signup.confirmPassword', e.target.value) }}
-              icon={<span className="material-icons">lock</span>}
-              onChange={this.handleSubmit}
-              adormentPosition={"end"}
-            />
-
-          </div>
+          <InputField
+            rootCss={"register_textField1"}
+            value={emailId}
+            icon={<MailRoundedIcon style={{ fontSize: "38px", color: "#fff" }} />}
+            iconPosition={"input-icon-left"}
+            placeholder={"Email Id"}
+            hasError={!emailId || !this.state.errors.emailId ? true : false}
+            errorMessage={this.state.errors.emailId}
+            handleChange={(e) => { setAppData('register.emailId', e.target.value) }}
+            fullwidth={"true"}
+            type={"mail"}
+          />
+          <InputField
+            rootCss={"register_textField2"}
+            value={phoneNumber}
+            icon={<PhoneRoundedIcon style={{ fontSize: "38px", color: "#fff" , fontStyle:"italic"}} />}
+            iconPosition={"input-icon-right"}
+            placeholder={"Phone Number"}
+            hasError={!phoneNumber || !this.state.errors.phoneNumber ? true : false}
+            errorMessage={this.state.errors.phoneNumber}
+            handleChange={(e) => { setAppData('register.phoneNumber', e.target.value) }}
+            fullwidth={"true"}
+            type={"phonenumber"}
+          />
+          <InputField
+            rootCss={"register_textField3"}
+            value={confirmPassword}
+            icon={<LockRoundedIcon style={{ fontSize: "38px", color: "#fff" }} />}
+            iconPosition={"input-icon-left"}
+            placeholder={"Confirm Password"}
+            hasError={!password || !this.state.errors.confirmPassword ? true : false}
+            errorMessage={this.state.errors.confirmPassword}
+            handleChange={(e) => { setAppData('register.confirmPassword', e.target.value) }}
+            fullwidth={"true"}
+            type={"password"}
+          />
+          <InputField
+            rootCss={"register_textField2"}
+            value={password}
+            icon={<LockRoundedIcon style={{ fontSize: "38px", color: "#fff" }} />}
+            iconPosition={"input-icon-right"}
+            placeholder={"Password"}
+            hasError={!password || !this.state.errors.password ? true : false}
+            errorMessage={this.state.errors.password}
+            handleChange={(e) => { setAppData('register.password', e.target.value) }}
+            fullwidth={"true"}
+            type={"password"}
+          />
+           
           <div>
             <ButtonComponent
               rootCss={"register_button1"}
-              value={"signup"}
-              color={"primary"}
-              onClick={this.handleSubmit}
-              variant={"contained"}
+              value={"Signup"}
+              color={"blue"}
+              type={"submit"}
             />
           </div>
-        </div>
+        </form>
       </div>
-
     );
   }
 }
 const mapStateToProps = ({ screenConfiguration }) => {
-  const { preparedFinalObject = {} } = screenConfiguration;
-  const { signup } = preparedFinalObject;
-  const { userName, emailId, phoneNumber, password, confirmPassword } = signup;
+  const { prepareFinalObject = {} } = screenConfiguration;
+  const { register } = prepareFinalObject;
+  const { userName, emailId, phoneNumber, password, confirmPassword } = Register;
   return { userName, emailId, phoneNumber, password, confirmPassword }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(withStyles(styles)(Register)));
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter((Register)));
