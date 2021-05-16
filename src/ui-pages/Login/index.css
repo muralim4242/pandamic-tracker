@@ -115,9 +115,9 @@
     right: 0;
   }
   .login_header{
-    font-size: 32px;
+    font-size: 32px !important;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 600 !important;
     padding: 16px;
     color: #0F4C7C;
     text-align: center;
