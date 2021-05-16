@@ -18,17 +18,16 @@ const intialState = {
       userName: "",
       password: ""
     },
-    register: {
+    transportregister: {
       select_type: "",
       vehicle_number: "",
       name: "",
       phone_number: "",
       address: "",
-      email: ""
+      email: "",
+      sidelist:[]
     },
-    sidebar_transport:{
-      
-    },
+   
     spinner: false,
     selectedLanguage: window.localStorage.getItem("selectedLanguage") || "en"
   },

@@ -1,4 +1,5 @@
 import { Drawer } from '@material-ui/core';
+import Select from '@material-ui/core/List';
 import React from 'react';
 import './index.css';
 
@@ -23,8 +24,8 @@ class SideBar extends React.Component {
 
 
     render() {
-        const { classes, sidelist, show, onClose } = this.props;
-
+        const { classes, sidelist, show, onClose, header, handleClickItem } = this.props;
+        console.log({ sidelist });
         return (
             <div className="root1">
                 <Drawer open={show} onClose={onClose}>
@@ -35,7 +36,14 @@ class SideBar extends React.Component {
                         onClick={this.toggleDrawer('left', false)}
                         onKeyDown={this.toggleDrawer('left', false)}
                     >
-                        {sidelist}
+                        <h3 className="header">{header}</h3>
+                        <Select className="unorder">
+                            {sidelist.length > 0 && sidelist.map((item, key) => {
+                                return (
+                                    <li className={item.value ? "listitemActive" : "listitem"} key={key} onClick={() => { handleClickItem(key) }}> {item.name} {item.hasIcon && item.icon}</li>
+                                );
+                            })}
+                        </Select>
                     </div>
                 </Drawer>
             </div>

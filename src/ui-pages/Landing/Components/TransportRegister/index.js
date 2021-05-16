@@ -16,31 +16,45 @@ import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
 import Select from '@material-ui/core/List';
 
 
-const sidelist = (
-  <div>
-    <h3 className="header">Transport Type</h3>
-    <Select className="unorder">
-      <a href="register" className="listitem"> Auto  </a>
-      <a href="register" className="listitem">car  {<DirectionsCarIcon style={{ fontSize: "xx-large" }} />} </a>
-      <a href="register" className="listitem">Bus {< DirectionsBusIcon style={{ fontSize: "xx-large" }} />}</a>
-      <a href="register" className="listitem">Train  {< TrainIcon style={{ fontSize: "xx-large" }} />} </a>
-      <a href="register" className="listitem">plane{< FlightIcon style={{ fontSize: "xx-large" }} />} </a>
-      <a href="register" className="listitem">Truck {< LocalShippingIcon style={{ fontSize: "xx-large" }} />}</a>
-      <a href="register" className="listitem">Van {< AirportShuttleIcon style={{ fontSize: "xx-large" }} />} </a>
-      <a href="register" className="listitem">Jeep </a>
-      <a href="register" className="listitem">Other Vehicle </a>
-    </Select>
+// const sidelist = (
+//   <div>
+//     <h3 className="header">Transport Type</h3>
+//     <Select className="unorder">
+//       <a href="register" className="listitem"> Auto  </a>
+//       <a href="register" className="listitem">car  {<DirectionsCarIcon style={{ fontSize: "xx-large" }} />} </a>
+//       <a href="register" className="listitem">Bus {< DirectionsBusIcon style={{ fontSize: "xx-large" }} />}</a>
+//       <a href="register" className="listitem">Train  {< TrainIcon style={{ fontSize: "xx-large" }} />} </a>
+//       <a href="register" className="listitem">plane{< FlightIcon style={{ fontSize: "xx-large" }} />} </a>
+//       <a href="register" className="listitem">Truck {< LocalShippingIcon style={{ fontSize: "xx-large" }} />}</a>
+//       <a href="register" className="listitem">Van {< AirportShuttleIcon style={{ fontSize: "xx-large" }} />} </a>
+//       <a href="register" className="listitem">Jeep </a>
+//       <a href="register" className="listitem">Other Vehicle </a>
+//     </Select>
 
-  </div>
-);
+//   </div>
+// );
+
+const sidelistdata = [{ name: "Auto", value: false, hasIcon: false, },
+{ name: "Car", value: false, hasIcon: true, icon: <DirectionsCarIcon style={{ fontSize: "xx-large" }} /> },
+{ name: "Bus", value: false, hasIcon: true, icon: <DirectionsBusIcon style={{ fontSize: "xx-large" }} /> },
+{ name: "Train", value: false, hasIcon: true, icon: <TrainIcon style={{ fontSize: "xx-large" }} /> },
+{ name: "Plane", value: false, hasIcon: true, icon: <FlightIcon style={{ fontSize: "xx-large" }} /> },
+{ name: "Truck", value: false, hasIcon: true, icon: <LocalShippingIcon style={{ fontSize: "xx-large" }} /> },
+{ name: "Van", value: false, hasIcon: true, icon: <AirportShuttleIcon style={{ fontSize: "xx-large" }} /> },
+{ name: "Jeep", value: false, hasIcon: false },
+{ name: "Other Vehicle", value: false, hasIcon: false },
+
+];
+
+
 class TransportRegister extends React.Component {
   state = {
     errors: {},
     loader: true,
     show: false,
-    onClose: false
-  }
+    onClose: false,
 
+  }
   validateRigister = (select_type, vehicle_number, name, phone_number, address, email) => {
     let formIsValid = true;
     let errors = {};
@@ -87,6 +101,7 @@ class TransportRegister extends React.Component {
 
   componentDidMount = () => {
     this.props.setAppData('dashboard.appbarName', "fill the information");
+    this.props.setAppData('transportregister.sidelist', sidelistdata);
   }
 
   OpenSideBar = () => {
@@ -96,37 +111,40 @@ class TransportRegister extends React.Component {
   closeSideBar = () => {
     this.setState({ show: false });
   }
-
-  // handleChange = (e) => {
-  //   this.setState({
-  //     data: {
-  //       ...this.state.data,
-  //       [e.target.userName]: e.target.value
-  //     }
-  //   });
-  // }
-
-  validate = () => {
-    // const { data } = this.state;
-    // let errors = {};
-
-  }
+  handleClickItem = (key) => {
+    const { transportregister, setAppData, sidelist } = this.props;
+    let dummyList = [];
+    dummyList = sidelist.map((item, index) => {
+      if (key === index) {
+        return {
+          ...item,
+          value: true
+        }
+      } else {
+        return {
+          ...item,
+          value: false
+        }
+      }
+    });
+    console.log({ dummyList });
+    setAppData('transportregister', { ...transportregister, sidelist: dummyList, select_type: dummyList[key].name });
+    this.setState({ show: false });
+  };
   render() {
-    console.log("error", this.state.errors);
-    console.log("closeSideBar", this.closeSideBar);
-
-
-    const {  setAppData, select_type, vehicle_number, name, phone_number, address, email, back, submit } = this.props;
+    const { setAppData, select_type, vehicle_number, name, phone_number, address, email, sidelist, back, submit } = this.props;
     return (
       <div className="transfort_root" >
         <Sidebar
           show={this.state.show}
           sidelist={sidelist}
           onClose={this.closeSideBar}
+          handleClickItem={this.handleClickItem}
+          header={"Transport Type"}
         />
         <TextFieldComponent
           rootCss="selector"
-          value={select_type}
+          fieldValue={select_type}
           placeholder={"Select Transport Type "}
           handleChange={(e) => { setAppData('register.Select', e.target.value) }}
           hasError={!select_type || !this.state.errors.select_type ? true : false}
@@ -140,10 +158,10 @@ class TransportRegister extends React.Component {
         />
         <TextFieldComponent
           rootCss="vehiclenumber_textfield"
-          value={vehicle_number}
+          fieldValue={vehicle_number}
           hasError={!vehicle_number || !this.state.errors.vehicle_number ? true : false}
           errorMessage={this.state.errors.vehicle_number}
-          handleChange={(e) => { setAppData('register.vehicle_number', e.target.value) }}
+          handleChange={(e) => { setAppData('transportregister.vehicle_number', e.target.value) }}
           placeholder={"Vehicle Number"}
           type={"text"}
         />
@@ -152,39 +170,39 @@ class TransportRegister extends React.Component {
           <div>
             <TextFieldComponent
               className="contact_input"
-              value={name}
+              fieldValue={name}
               hasError={!name || !this.state.errors.name ? true : false}
               errorMessage={this.state.errors.name}
-              handleChange={(e) => { setAppData('register.name', e.target.value) }}
+              handleChange={(e) => { setAppData('transportregister.name', e.target.value) }}
               placeholder={"Name"}
               type={"text"}
             />
             <TextFieldComponent
               className="contact_input"
-              value={phone_number}
+              fieldValue={phone_number}
               hasError={!phone_number || !this.state.errors.name ? true : false}
               errorMessage={this.state.errors.phone_number}
-              handleChange={(e) => { setAppData('register.phone_number', e.target.value) }}
+              handleChange={(e) => { setAppData('transportregister.phone_number', e.target.value) }}
               placeholder={"Phone Number"}
-              type="number"
-              maxLength="10"
-              minlength="10"
+              type="phone"
+              maxLength={10}
+              minlength={10}
             />
             <TextFieldComponent
               className="contact_input"
-              value={address}
+              fieldValue={address}
               hasError={!address || !this.state.errors.address ? true : false}
               errorMessage={this.state.errors.address}
-              handleChange={(e) => { setAppData('register.address', e.target.value) }}
+              handleChange={(e) => { setAppData('transportregister.address', e.target.value) }}
               placeholder={"Address"}
               type="text"
             />
             <TextFieldComponent
               className="contact_input"
-              value={email}
+              fieldValue={email}
               hasError={!email || !this.state.errors.email ? true : false}
               errorMessage={this.state.errors.email}
-              handleChange={(e) => { setAppData('register.email', e.target.value) }}
+              handleChange={(e) => { setAppData('transportregister.email', e.target.value) }}
               placeholder={"Mail Id"}
               type="email"
             />
@@ -214,9 +232,9 @@ class TransportRegister extends React.Component {
 }
 const mapStateToProps = ({ screenConfiguration }) => {
   const { preparedFinalObject = {} } = screenConfiguration;
-  const { register } = preparedFinalObject;
-  const { select_type, vehicle_number, name, phone_number, address, email } = register;
-  return { select_type, vehicle_number, name, phone_number, address, email }
+  const { transportregister } = preparedFinalObject;
+  const { select_type, vehicle_number, name, phone_number, address, email, sidelist } = transportregister;
+  return { select_type, vehicle_number, name, phone_number, address, email, sidelist: [...sidelist], transportregister: { ...transportregister } }
 
 }
 

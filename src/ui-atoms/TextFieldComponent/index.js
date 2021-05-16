@@ -41,6 +41,8 @@ class TextFieldComponent extends React.Component {
                     className={rootCss}
                     autoComplete={'false'}
                     iconPosition={iconPosition}
+                    maxLength={maxlength}
+                    minLength={minlength}
                     {...rest}
                 />
                 {hasError && <span className={"error-message"}>{errorMessage}</span>}
