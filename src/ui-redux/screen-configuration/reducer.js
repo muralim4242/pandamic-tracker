@@ -18,6 +18,13 @@ const intialState = {
       userName: "",
       password: ""
     },
+    signup: {
+      userName: "",
+      emailId: "",
+      phoneNumber: "",
+      password: "",
+      confirmPassword: ""
+    },
     transportregister: {
       select_type: "",
       vehicle_number: "",
@@ -25,9 +32,9 @@ const intialState = {
       phone_number: "",
       address: "",
       email: "",
-      sidelist:[]
+      sidelist: []
     },
-   
+
     spinner: false,
     selectedLanguage: window.localStorage.getItem("selectedLanguage") || "en"
   },

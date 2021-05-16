@@ -35,20 +35,21 @@ class Login extends React.Component {
   }
 
   handleLogin = () => {
-    const { userName, password } = this.props;
+    const { userName, password,history } = this.props;
     if (this.validateLogin(userName, password)) {
       this.setState({ loader: true });
+      history.push("user-home/transport-register")
     }
   }
 
   render() {
     const {  setAppData, userName, password } = this.props;
     return (
-      <div className={"root"}>
+      <div className={"login_root"}>
         <form  onClick={() => { this.handleLogin() }}>
-        <Typography component={"h2"} className={"header"}>Login</Typography>
+        <Typography component={"h2"} className={"login_header"}>Login</Typography>
           <TextFieldComponent
-            className="textField"
+            className="login_textField"
             icon={<PersonRoundedIcon style={{ fontSize: "44px", color: "#0F4C7C" }} />}
             iconPosition={"input-icon-right "}
             type="text"
@@ -60,7 +61,7 @@ class Login extends React.Component {
             fullwidth={"true"}
           />
           <TextFieldComponent
-            rootCss={"textField1"}
+            rootCss={"login_textField1"}
             value={password}
             icon={<LockRoundedIcon style={{ fontSize: "44px", color: "#fff" }} />}
             iconPosition={"input-icon-left"}
@@ -73,7 +74,7 @@ class Login extends React.Component {
           />
           <div>
             <ButtonComponent
-              rootCss={"button1"}
+              rootCss={"login_button1"}
               value={"Login"}
               color={"blue"}
               type={"submit"}

@@ -18,7 +18,7 @@ const UserRoutes = () => {
   return (
     <div>
       <Route path="/user-home/dashboard" component={Dashboard} />
-      <Route path="/user-home/register" component={TransportRegister} />
+      <Route path="/user-home/transport-register" component={TransportRegister} />
     </div>
   );
 };
