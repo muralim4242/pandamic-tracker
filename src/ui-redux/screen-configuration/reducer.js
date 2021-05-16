@@ -11,17 +11,23 @@ const intialState = {
       variant: "success",
       message: ""
     },
+    dashboard: {
+      appbarName: ""
+    },
     login: {
       userName: "",
       password: ""
     },
-    signup: {
-      userName: "",
-      emailId: "",
-      phoneNumber: "",
-      password: "",
-      confirmPassword: ""
+    transportregister: {
+      select_type: "",
+      vehicle_number: "",
+      name: "",
+      phone_number: "",
+      address: "",
+      email: "",
+      sidelist:[]
     },
+   
     spinner: false,
     selectedLanguage: window.localStorage.getItem("selectedLanguage") || "en"
   },

@@ -9,10 +9,16 @@ const Dashboard = Loadable({
   loading: Loading,
 });
 
+const TransportRegister = Loadable({
+  loader: () => import("../ui-pages/Landing/Components/TransportRegister"),
+  loading: Loading
+});
+
 const UserRoutes = () => {
   return (
     <div>
-      <Route  path="/user-home/dashboard" component={Dashboard} />
+      <Route path="/user-home/dashboard" component={Dashboard} />
+      <Route path="/user-home/register" component={TransportRegister} />
     </div>
   );
 };

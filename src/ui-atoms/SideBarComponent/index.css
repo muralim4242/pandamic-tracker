@@ -1,0 +1,50 @@
+.root1{
+    width:100%;
+    height:100%;
+    background-color: rgb(177, 29, 29);
+}
+
+.list {
+    width: 250px;
+    height: 100vh;
+    /* background-color: #2998d4; */
+  }
+  .unorder{
+    display: contents;
+ }
+ .listitem{
+     display: flex;
+     justify-content: space-between;
+     padding: 15px;
+     font-size: large;
+     font-weight: bold;
+     text-decoration: none;
+     cursor: pointer;
+     align-items: center;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ .listitem:hover{
+     background-color: #52ADF2;
+ }
+ .listitemActive{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #52ADF2;
+ }
+ .header{
+    background-color: #1F6BA8;
+    width: 250px;
+    height: 64px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
