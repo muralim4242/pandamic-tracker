@@ -6,7 +6,7 @@ import './index.css';
 
 const styles = {
     list: {
-      width: 250,
+        width: 250,
     }
 };
 
@@ -23,18 +23,17 @@ class SideBar extends React.Component {
 
 
     render() {
-        const { classes,sidelist,show ,close} = this.props;
+        const { classes, sidelist, show, onClose } = this.props;
 
         return (
             <div className="root1">
-                <Drawer open={show} onClose={close}>
-                    <div 
-                        className= "list"
+                <Drawer open={show} onClose={onClose}>
+                    <div
+                        className="list"
                         tabIndex={0}
                         role="button"
                         onClick={this.toggleDrawer('left', false)}
                         onKeyDown={this.toggleDrawer('left', false)}
-                        
                     >
                         {sidelist}
                     </div>

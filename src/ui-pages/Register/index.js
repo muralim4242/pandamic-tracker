@@ -1,5 +1,4 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { mapDispatchToProps } from "../../ui-utils/commons";
@@ -7,31 +6,33 @@ import "./index.css";
 import TextFieldComponent from "../../ui-atoms/TextFieldComponent";
 import DoubleArrowRoundedIcon from '@material-ui/icons/DoubleArrowRounded';
 import ButtonComponent from "../../ui-atoms/ButtonComponent";
-import Sidebar from "../Register/Sidebar_Transport";
+import Sidebar from "../../ui-atoms/SideBarComponent";
+import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
+import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
+import TrainIcon from '@material-ui/icons/Train';
+import FlightIcon from '@material-ui/icons/Flight';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
+import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
+import Select from '@material-ui/core/List';
 
-const styles = theme => ({
-  root: {
-    width: "100%",
-    height: "100%"
-  },
-  paperRoot: {
-    [theme.breakpoints.down("sm")]: {
-      width: "50%",
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: "80%",
-    },
-    width: "25%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "8px 24px",
-    margin: "8px",
-    flexDirection: "column",
-    cursor: "pointer"
-  }
-});
 
+const sidelist = (
+  <div>
+    <h3 className="header">Transport Type</h3>
+    <Select className="unorder">
+      <a href="register" className="listitem"> Auto  </a>
+      <a href="register" className="listitem">car  {<DirectionsCarIcon style={{ fontSize: "xx-large" }} />} </a>
+      <a href="register" className="listitem">Bus {< DirectionsBusIcon style={{ fontSize: "xx-large" }} />}</a>
+      <a href="register" className="listitem">Train  {< TrainIcon style={{ fontSize: "xx-large" }} />} </a>
+      <a href="register" className="listitem">plane{< FlightIcon style={{ fontSize: "xx-large" }} />} </a>
+      <a href="register" className="listitem">Truck {< LocalShippingIcon style={{ fontSize: "xx-large" }} />}</a>
+      <a href="register" className="listitem">Van {< AirportShuttleIcon style={{ fontSize: "xx-large" }} />} </a>
+      <a href="register" className="listitem">Jeep </a>
+      <a href="register" className="listitem">Other Vehicle </a>
+    </Select>
+
+  </div>
+);
 class Register extends React.Component {
   state = {
     errors: {},
@@ -87,47 +88,41 @@ class Register extends React.Component {
   componentDidMount = () => {
     this.props.setAppData('dashboard.appbarName', "fill the information");
   }
-  // openClick() {
-  //   this.show.Sidebar();
-  // }
 
   OpenSideBar = () => {
-    // if(show === true){
-    //   console.log("sideBar open ");
-    // }else{close === true}
-    //this.sidelist.show ;
     this.setState({ show: true });
   }
 
-  closeSideBar = () =>{
-    this.setState({onClose : true});
-  }  
+  closeSideBar = () => {
+    this.setState({ show: false });
+  }
 
   render() {
     console.log("error", this.state.errors);
-    console.log("closeSideBar",this.closeSideBar);
+    console.log("closeSideBar", this.closeSideBar);
 
 
-    const { classes, setAppData, select_type, vehicle_number, name, phone_number, address, email, back, submit } = this.props;
+    const {  setAppData, select_type, vehicle_number, name, phone_number, address, email, back, submit } = this.props;
     return (
       <div className="transfort_root" >
         <Sidebar
-          show= {this.state.show}
-          //onClose= {this.state.onClose}
-          onClick = {this.closeSideBar}
+          show={this.state.show}
+          sidelist={sidelist}
+          onClose={this.closeSideBar}
         />
         <TextFieldComponent
           rootCss="selector"
           value={select_type}
           placeholder={"Select Transport Type "}
+          handleChange={(e) => { setAppData('register.Select', e.target.value) }}
           hasError={!select_type || !this.state.errors.select_type ? true : false}
           errorMessage={this.state.errors.select_type}
           icon={<DoubleArrowRoundedIcon style={{ fontSize: "22px", color: "#3ea1a5" }} />}
           iconPosition={"transfort-input-icon-right"}
           type="text"
-          handleOnClick={ this.OpenSideBar }
-          hasButton = {true}
-          //handleOnClick = {this.closeSideBar}
+          handleOnClick={this.OpenSideBar}
+          hasButton={true}
+        //handleOnClick = {this.closeSideBar}
         />
         <TextFieldComponent
           rootCss="vehiclenumber_textfield"
@@ -210,7 +205,7 @@ const mapStateToProps = ({ screenConfiguration }) => {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(withStyles(styles)(Register)));
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Register));
 
 
 

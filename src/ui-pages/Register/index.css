@@ -79,3 +79,29 @@
 .submit:hover{
     color: #1769AA;
 }
+/* .sidebar{
+    width:200px;
+    height: 100%;
+    background-color: blue;
+} */
+
+.header{
+    background-color: #215dc1;
+    width: 250px;
+    height: 64px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin: unset;
+    align-items: center;
+}
+.unorder{
+   display: contents;
+}
+.listitem{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+}
