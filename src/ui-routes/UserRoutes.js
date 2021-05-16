@@ -9,8 +9,8 @@ const Dashboard = Loadable({
   loading: Loading,
 });
 
-const Register = Loadable({
-  loader: () => import("../ui-pages/Register"),
+const TransportRegister = Loadable({
+  loader: () => import("../ui-pages/Landing/Components/TransportRegister"),
   loading: Loading
 });
 
@@ -18,7 +18,7 @@ const UserRoutes = () => {
   return (
     <div>
       <Route path="/user-home/dashboard" component={Dashboard} />
-      <Route path="/user-home/register" component={Register} />
+      <Route path="/user-home/register" component={TransportRegister} />
     </div>
   );
 };

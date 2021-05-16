@@ -65,6 +65,7 @@
     margin: 0px 60px 0px 10px;
     font-size: larger;
     color: white;
+    cursor: pointer;
 }
 .back:hover{
     color: #949494;
@@ -75,6 +76,7 @@
     height: 40px;
     font-size: larger;
     color: white;
+    cursor: pointer;
 }
 .submit:hover{
     color: #1769AA;

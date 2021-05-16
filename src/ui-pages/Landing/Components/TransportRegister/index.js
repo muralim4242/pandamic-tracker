@@ -1,12 +1,12 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { mapDispatchToProps } from "../../ui-utils/commons";
+import { mapDispatchToProps } from "../../../../ui-utils/commons";
 import "./index.css";
-import TextFieldComponent from "../../ui-atoms/TextFieldComponent";
+import TextFieldComponent from "../../../../ui-atoms/TextFieldComponent";
 import DoubleArrowRoundedIcon from '@material-ui/icons/DoubleArrowRounded';
-import ButtonComponent from "../../ui-atoms/ButtonComponent";
-import Sidebar from "../../ui-atoms/SideBarComponent";
+import ButtonComponent from "../../../../ui-atoms/ButtonComponent";
+import Sidebar from "../../../../ui-atoms/SideBarComponent";
 import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
 import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import TrainIcon from '@material-ui/icons/Train';
@@ -33,7 +33,7 @@ const sidelist = (
 
   </div>
 );
-class Register extends React.Component {
+class TransportRegister extends React.Component {
   state = {
     errors: {},
     loader: true,
@@ -220,10 +220,5 @@ const mapStateToProps = ({ screenConfiguration }) => {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Register));
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(TransportRegister));
 
-
-
-{/* <Sidebar 
-sidelist= {this.state.show}
-/> */}
