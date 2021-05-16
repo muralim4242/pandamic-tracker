@@ -97,6 +97,20 @@ class Register extends React.Component {
     this.setState({ show: false });
   }
 
+  // handleChange = (e) => {
+  //   this.setState({
+  //     data: {
+  //       ...this.state.data,
+  //       [e.target.userName]: e.target.value
+  //     }
+  //   });
+  // }
+
+  validate = () => {
+    // const { data } = this.state;
+    // let errors = {};
+
+  }
   render() {
     console.log("error", this.state.errors);
     console.log("closeSideBar", this.closeSideBar);
@@ -194,6 +208,7 @@ class Register extends React.Component {
         </div>
 
       </div>
+
     );
   }
 }

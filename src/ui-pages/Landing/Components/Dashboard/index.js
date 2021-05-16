@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { mapDispatchToProps } from "../../../../ui-utils/commons";
+import QRCodeGenerator from "../../../QRCode/Components/QRCodeGenerator";
 
 const styles = (theme) => ({
   root: {
@@ -10,11 +11,10 @@ const styles = (theme) => ({
     height: "100vh",
     alignItems: "center",
     justifyContent: "center",
-  }
+  },
 });
 
 class Dashboard extends React.Component {
-
   render() {
     const { classes } = this.props;
     return (
@@ -25,4 +25,7 @@ class Dashboard extends React.Component {
   }
 }
 
-export default connect(null, mapDispatchToProps)(withRouter(withStyles(styles)(Dashboard)));
+export default connect(
+  null,
+  mapDispatchToProps
+)(withRouter(withStyles(styles)(Dashboard)));
