@@ -2,14 +2,11 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { mapDispatchToProps } from "../../ui-utils/commons";
-import InputField from '../../ui-atoms/InputField/InputField';
+import InputField from "../../ui-atoms/InputField";
 import ButtonComponent from "../../ui-atoms/ButtonComponent";
-import LockRoundedIcon from '@material-ui/icons/LockRounded';
-import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
+
 import './index.css';
-import { Typography } from "@material-ui/core";
-import MailRoundedIcon from '@material-ui/icons/MailRounded';
-import PhoneRoundedIcon from '@material-ui/icons/PhoneRounded';
+
 
 
 
