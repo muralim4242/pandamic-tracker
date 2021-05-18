@@ -13,12 +13,18 @@ const TransportRegister = Loadable({
   loader: () => import("../ui-pages/Landing/Components/TransportRegister"),
   loading: Loading
 });
+const Shop_register = Loadable({
+  loader: () => import("../ui-pages/Landing/Components/Shop_register"),
+  loading: Loading
+});
 
 const UserRoutes = () => {
   return (
     <div>
       <Route path="/user-home/dashboard" component={Dashboard} />
       <Route path="/user-home/transport-register" component={TransportRegister} />
+      <Route path="/user-home/Shop_register" component={Shop_register} />
+
     </div>
   );
 };
