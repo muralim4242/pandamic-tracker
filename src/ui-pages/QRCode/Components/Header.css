@@ -1,0 +1,27 @@
+header {
+  background-color: rgb(54, 186, 219);
+  padding: 15px;
+  margin-bottom: 12%;
+  box-shadow: 0.001em 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  display: inline;
+}
+
+.icon {
+  width: 35px;
+  height: 3px;
+  border: 0.05px solid whitesmoke;
+  background-color: rgba(250, 250, 250, 0.993);
+  margin-bottom: 5px;
+  border-radius: 20px;
+}
+
+header .hamburger {
+   float: right; 
+}

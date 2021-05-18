@@ -1,15 +1,15 @@
 .login_root{
-  width: 96vw;
+  width: 100%;
   border-bottom: 5px solid white;
   height: 95vh;
   display: flex;
-  position: fixed;
   justify-content: center;
   align-items: center;
   background-color: #3F8394;
   border-bottom-width: 450px;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  align-items: center;
   }
 .login_bg {
     background-size: cover;
@@ -114,10 +114,10 @@
     padding: 10px 10px;
     right: 0;
   }
-  .header{
-    font-size: 32px;
+  .login_header{
+    font-size: 32px !important;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 600 !important;
     padding: 16px;
     color: #0F4C7C;
     text-align: center;

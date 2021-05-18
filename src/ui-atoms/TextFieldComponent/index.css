@@ -12,3 +12,9 @@
    line-height: 15px;
    margin: 5px 0 0;
  }
+ .iconButton{
+  outline: none;
+  border: unset;
+  cursor: pointer;
+  background-color: white;
+ }

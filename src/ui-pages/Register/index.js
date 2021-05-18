@@ -59,71 +59,73 @@ class Register extends React.Component {
     const { setAppData, userName, emailId, phoneNumber, password, confirmPassword} = this.props;
     return (
       <div className={"register_root"}>
-        <form onClick={() => { this.handleRegister() }}>
-          <Typography component={"h1"} className={"header"}>Signup</Typography>
-          <InputField
-            rootCss={"register_textField"}
-            value={userName}
-            icon={<PersonRoundedIcon style={{ fontSize: "44px", color: "#0F4C7C" }} />}
-            iconPosition={"input-icon-right "}
-            type={"text"}
-            hasError={!userName || !this.state.errors.userName ? true : false}
-            errorMessage={this.state.errors.userName}
-            placeholder={"User Name"}
-            handleChange={(e) => { setAppData('register.userName', e.target.value) }}
-            fullwidth={"true"}
-          />
+        <div>
+          <div style={{ justifyContent: "center", display: "flex", color: "#0f4c7c", fontStyle: "italic" }}>
+            <h1>Signup</h1>
+          </div>
 
+          <div>
+            <InputField
+              rootCss={"register_textField"}
+              value={userName}
+              handleChange={(e) => { setAppData('signup.userName', e.target.value) }}
+              hasEndAdornment={true}
+              placeholder={"User Name"}
+              adornmentPosition={"end"}
+              icon={<span className="material-icons">person</span>}
+            />
 
-          <InputField
-            rootCss={"register_textField1"}
-            value={emailId}
-            icon={<MailRoundedIcon style={{ fontSize: "38px", color: "#fff" }} />}
-            iconPosition={"input-icon-left"}
-            placeholder={"Email Id"}
-            hasError={!emailId || !this.state.errors.emailId ? true : false}
-            errorMessage={this.state.errors.emailId}
-            handleChange={(e) => { setAppData('register.emailId', e.target.value) }}
-            fullwidth={"true"}
-            type={"mail"}
-          />
-          <InputField
-            rootCss={"register_textField2"}
-            value={phoneNumber}
-            icon={<PhoneRoundedIcon style={{ fontSize: "38px", color: "#fff" , fontStyle:"italic"}} />}
-            iconPosition={"input-icon-right"}
-            placeholder={"Phone Number"}
-            hasError={!phoneNumber || !this.state.errors.phoneNumber ? true : false}
-            errorMessage={this.state.errors.phoneNumber}
-            handleChange={(e) => { setAppData('register.phoneNumber', e.target.value) }}
-            fullwidth={"true"}
-            type={"phonenumber"}
-          />
-          <InputField
-            rootCss={"register_textField3"}
-            value={confirmPassword}
-            icon={<LockRoundedIcon style={{ fontSize: "38px", color: "#fff" }} />}
-            iconPosition={"input-icon-left"}
-            placeholder={"Confirm Password"}
-            hasError={!password || !this.state.errors.confirmPassword ? true : false}
-            errorMessage={this.state.errors.confirmPassword}
-            handleChange={(e) => { setAppData('register.confirmPassword', e.target.value) }}
-            fullwidth={"true"}
-            type={"password"}
-          />
-          <InputField
-            rootCss={"register_textField2"}
-            value={password}
-            icon={<LockRoundedIcon style={{ fontSize: "38px", color: "#fff" }} />}
-            iconPosition={"input-icon-right"}
-            placeholder={"Password"}
-            hasError={!password || !this.state.errors.password ? true : false}
-            errorMessage={this.state.errors.password}
-            handleChange={(e) => { setAppData('register.password', e.target.value) }}
-            fullwidth={"true"}
-            type={"password"}
-          />
-           
+          </div>
+
+          <div>
+            <InputField
+              rootCss={"register_textField1"}
+              value={emailId}
+              handleChange={(e) => { setAppData('signup.emailId', e.target.value) }}
+              hasstartAdornment={true}
+              placeholder={"Email ID"}
+              adornmentPosition={"end"}
+              icon={<span className="material-icons">mail</span>}
+            />
+
+          </div>
+
+          <div>
+            <InputField
+              rootCss={"register_textField2"}
+              value={phoneNumber}
+              handleChange={(e) => { setAppData('signup.phoneNumber', e.target.value) }}
+              hasEndAdornment={true}
+              placeholder={"Phone Number"}
+              adornmentPosition={"end"}
+              icon={<span className="material-icons">phone</span>}
+            />
+
+          </div>
+          <div>
+            <InputField
+              rootCss={"register_textField3"}
+              value={password}
+              handleChange={(e) => { setAppData('signup.password', e.target.value) }}
+              hasstartAdornment={true}
+              placeholder={"Password"}
+              icon={<span className="material-icons">lock</span>}
+            />
+
+          </div>
+          <div>
+            <InputField
+              rootCss={"register_textField4"}
+              hasEndAdornment={true}
+              value={confirmPassword}
+              placeholder={"Confirm Password"}
+              handleChange={(e) => { setAppData('signup.confirmPassword', e.target.value) }}
+              icon={<span className="material-icons">lock</span>}
+              onChange={this.handleSubmit}
+              adormentPosition={"end"}
+            />
+
+          </div>
           <div>
             <ButtonComponent
               rootCss={"register_button1"}
@@ -132,7 +134,7 @@ class Register extends React.Component {
               type={"submit"}
             />
           </div>
-        </form>
+         </div> 
       </div>
     );
   }

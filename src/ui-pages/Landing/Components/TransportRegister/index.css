@@ -1,0 +1,117 @@
+.margin1{
+    border-width: 8px 6px 100px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.transfort_root{
+    margin: 10px;
+}
+.transfort-input-icon-right {
+    position: absolute;
+    padding: 20px;
+    right: 0;
+  }
+.heading{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+.vehiclenumber_textfield{
+    margin:10px 0px;
+    height: 40px;
+    font-size: larger;
+    border: 2px solid #a9a3a3;
+}
+.heading1{
+    background-color: #777070;
+    color: white;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    height: 50px;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
+.subscreen{
+    padding: 10px;
+    margin:10px 0px;
+    background-color: whitesmoke;
+}
+.contact_input{
+    height: 40px;
+    margin: 10px 0px;
+    color: black;
+    font-size: larger;
+    border: 2px solid #a9a3a3;
+    padding: 5px
+}
+.selector{
+    margin: 10px 0px;
+    height: 40px;
+    font-size: larger;
+    border: 2px solid #3ea1a5;
+    color: #3ea1a5  ;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+}
+.back{
+    width: 130px;
+    background-color: #A7A7A7;
+    height: 40px;
+    margin: 0px 60px 0px 10px;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+}
+.back:hover{
+    color: #949494;
+}
+.submit{
+    width: 130px;
+    background-color: #2196F3;
+    height: 40px;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+}
+.submit:hover{
+    color: #1769AA;
+}
+/* .sidebar{
+    width:200px;
+    height: 100%;
+    background-color: blue;
+} */
+
+.header{
+    background-color: #1F6BA8;
+    width: 250px;
+    height: 64px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.unorder{
+   display: contents;
+}
+.listitem{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.listitem:hover{
+    background-color: #52ADF2;
+}

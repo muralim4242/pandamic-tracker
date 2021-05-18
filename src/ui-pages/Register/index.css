@@ -1,13 +1,10 @@
 .register_root{
     width: 100%;
-    border: 5px solid white;
-    height: 93%;
+    height:100vh;
     display: flex;
     overflow: hidden;
-    position: fixed;
-    background-size: cover;
     justify-content: center;
-    background-color: rgb(26, 180, 173);
+    background-color: #3f8394;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }
@@ -38,13 +35,12 @@
     width:100%;
     border: 2px solid #0a546d;
     margin: 15px 0px;
-    padding: 14px 4px;
+    padding: 10px 4px;
     font-size: initial;
     border-left: none;
     border-radius: 0px 50px 50px 0px;
-    background: rgb(26, 180, 173);
+    background: #3f8394;
     font-style: italic;
-    font-size: 160%;
   }
   .register_textField:focus{
     border: 2px solid #0a546d;
@@ -59,11 +55,11 @@
     color: white;
     border: 2px solid #fff;
     margin: 15px 0px;
-    padding: 14px 4px;
+    padding: 10px 4px;
     font-size: initial;
     border-color: white;
     border-right: none;
-    background: rgb(26, 180, 173);
+    background: #3f8394;
     font-size: 160%;
     font-style: italic;
     border-radius: 50px 0px 0px 50px;
@@ -82,11 +78,11 @@
     border: 2px solid #fff;
     color: white;
     margin: 15px 0px;
-    padding: 14px 4px;
+    padding: 10px 4px;
     font-size: initial;
     border-left: none;
     border-radius: 0px 50px 50px 0px;
-    background: rgb(26, 180, 173);
+    background: #3f8394;
     font-size: 160%;
     font-style: italic;
   }
@@ -103,11 +99,11 @@
     color: white;
     border: 2px solid #fff;
     margin: 15px 0px;
-    padding: 14px 4px;
+    padding: 10px 4px;
     font-size: initial;
     border-color: white;
     border-right: none;
-    background: rgb(26, 180, 173);
+    background: #3f8394;
     border-radius: 50px 0px 0px 50px;
     font-size: 160%;
     font-style: italic;
@@ -127,11 +123,11 @@
     border: 2px solid #fff;
     margin: 15px 0px;
     color: white;
-    padding: 14px 4px;
+    padding: 10px 4px;
     font-size: initial;
     border-left: none;
     border-radius: 0px 50px 50px 0px;
-    background: rgb(26, 180, 173);
+    background: #3f8394;
     font-size: 160%;
     font-style: italic;
     align-items: center;
@@ -148,7 +144,7 @@
   .register_button1 {
     width: 70%;
     height: 60px;
-    background-color: #0F4C7C;
+    background-color: #0f4c7c;
     border-radius: 300px;
     border: none;
     color: white;
@@ -165,6 +161,8 @@
 }
 .register_button1:hover{
     opacity: 5;
-    background: #0F4C7C;
+    background: #0f4c7c;
 }
-
+.material-icons{
+    font-size: 32px;
+}

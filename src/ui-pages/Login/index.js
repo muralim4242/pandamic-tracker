@@ -10,6 +10,7 @@ import './index.css';
 import { Typography } from "@material-ui/core";
 
 
+
 class Login extends React.Component {
   state = {
     errors: {},
@@ -34,17 +35,19 @@ class Login extends React.Component {
   }
 
   handleLogin = () => {
-    const { userName, password } = this.props;
+    const { userName, password,history } = this.props;
     if (this.validateLogin(userName, password)) {
       this.setState({ loader: true });
+      history.push("user-home/transport-register")
     }
   }
+
   render() {
-    const { setAppData, userName, password } = this.props;
+    const {  setAppData, userName, password } = this.props;
     return (
       <div className={"login_root"}>
-        <form onClick={() => { this.handleLogin() }}>
-          <Typography component={"h2"} className={"header"}>Login</Typography>
+        <form  onClick={() => { this.handleLogin() }}>
+        <Typography component={"h2"} className={"login_header"}>Login</Typography>
           <TextFieldComponent
             className="login_textField"
             icon={<PersonRoundedIcon style={{ fontSize: "44px", color: "#0F4C7C" }} />}
@@ -82,6 +85,7 @@ class Login extends React.Component {
     );
   }
 }
+
 const mapStateToProps = ({ screenConfiguration }) => {
   const { preparedFinalObject = {} } = screenConfiguration;
   const { login } = preparedFinalObject;
