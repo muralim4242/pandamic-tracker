@@ -22,7 +22,7 @@ const styles = {
 
   },
   toolbar: {
-    backgroundColor: "#00BCD4"
+    backgroundColor: "#0f7c8a"
   },
   customTabSelected: {
     fontSize: "16px !important",

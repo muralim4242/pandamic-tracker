@@ -96,11 +96,12 @@ class TransportRegister extends React.Component {
   }
 
   BackToMenu = () => {
+    this.props.history.push('/user-home/dashboard');
     this.setState({ loader: true });
   }
 
   componentDidMount = () => {
-    this.props.setAppData('dashboard.appbarName', "fill the information");
+    this.props.setAppData('dashboard.appbarName', "Fill Your Information");
     this.props.setAppData('transportregister.sidelist', sidelistdata);
   }
 

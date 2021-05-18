@@ -25,6 +25,7 @@ const intialState = {
       password: "",
       confirmPassword: ""
     },
+    
     transportregister: {
       select_type: "",
       vehicle_number: "",

@@ -30,7 +30,7 @@ const MainRoutes = () => {
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
       <Route path="/qrcode" component={QRPage} />
-      <Redirect to="/register" />
+      <Redirect to="/user-home/Dashboard" />
     </div>
   );
 };
