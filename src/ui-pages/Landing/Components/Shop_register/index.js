@@ -76,7 +76,7 @@ class Shop_register extends React.Component {
 
   componentDidMount = () => {
     this.props.setAppData('dashboard.appbarName', "Fill the information");
-    this.props.setAppData('Shop_register.sidelist', sidelistdata);
+    this.props.setAppData('shop_register.sidelist', sidelistdata);
   }
 
   OpenSideBar = () => {
@@ -87,7 +87,7 @@ class Shop_register extends React.Component {
     this.setState({ show: false });
   }
   handleClickItem = (key) => {
-    const { Shop_register, setAppData, sidelist } = this.props;
+    const { shop_register, setAppData, sidelist } = this.props;
     let dummyList = [];
     dummyList = sidelist.map((item, index) => {
       if (key === index) {
@@ -103,7 +103,7 @@ class Shop_register extends React.Component {
       }
     });
     console.log({ dummyList });
-    setAppData('Shop_register', { ...Shop_register, sidelist: dummyList, select_type: dummyList[key].name });
+    setAppData('shop_register', { ...shop_register, sidelist: dummyList, select_type: dummyList[key].name });
     this.setState({ show: false });
   };
 
@@ -124,7 +124,7 @@ class Shop_register extends React.Component {
           rootCss="selector"
           fieldValue={select_type}
           placeholder={"Select Shop Type "}
-          handleChange={(e) => { setAppData('Shop_register.Select', e.target.value) }}
+          handleChange={(e) => { setAppData('shop_register.Select', e.target.value) }}
           hasError={!select_type || !this.state.errors.select_type ? true : false}
           errorMessage={this.state.errors.select_type}
           icon={<DoubleArrowRoundedIcon style={{ fontSize: "22px", color: "#3ea1a5" }} />}
@@ -137,7 +137,7 @@ class Shop_register extends React.Component {
         <InputField
           rootCss="Shop_textfield"
           fieldValue={Shop_name}
-          handleChange={(e) => { setAppData('Shop_register.Shop_name', e.target.value) }}
+          handleChange={(e) => { setAppData('shop_register.Shop_name', e.target.value) }}
           placeholder={"Shop name"}
           hasError={!Shop_name || !this.state.errors.Shop_name ? true : false}
           errorMessage={this.state.errors.Shop_name}
@@ -151,7 +151,7 @@ class Shop_register extends React.Component {
               fieldValue={name}
               hasError={!name || !this.state.errors.name ? true : false}
               errorMessage={this.state.errors.name}
-              handleChange={(e) => { setAppData('Shop_register.name', e.target.value) }}
+              handleChange={(e) => { setAppData('shop_register.name', e.target.value) }}
               placeholder={"Name"}
               type={"text"}
             />
@@ -160,7 +160,7 @@ class Shop_register extends React.Component {
               fieldValue={phone_number}
               hasError={!phone_number || !this.state.errors.name ? true : false}
               errorMessage={this.state.errors.phone_number}
-              handleChange={(e) => { setAppData('Shop_register.phone_number', e.target.value) }}
+              handleChange={(e) => { setAppData('shop_register.phone_number', e.target.value) }}
               placeholder={"Phone Number"}
               type="phone"
               maxLength={10}
@@ -171,7 +171,7 @@ class Shop_register extends React.Component {
               fieldValue={address}
               hasError={!address || !this.state.errors.address ? true : false}
               errorMessage={this.state.errors.address}
-              handleChange={(e) => { setAppData('Shop_register.address', e.target.value) }}
+              handleChange={(e) => { setAppData('shop_register.address', e.target.value) }}
               placeholder={"Address"}
               type="text"
             />
@@ -180,7 +180,7 @@ class Shop_register extends React.Component {
               fieldValue={email}
               hasError={!email || !this.state.errors.email ? true : false}
               errorMessage={this.state.errors.email}
-              handleChange={(e) => { setAppData('Shop_register.email', e.target.value) }}
+              handleChange={(e) => { setAppData('shop_register.email', e.target.value) }}
               placeholder={"Mail Id"}
               type="email"
             />
@@ -210,9 +210,9 @@ class Shop_register extends React.Component {
 }
 const mapStateToProps = ({ screenConfiguration }) => {
   const { preparedFinalObject = {} } = screenConfiguration;
-  const { Shop_register } = preparedFinalObject;
-  const { select_type, Shop_name, name, phone_number, address, email, sidelist } = Shop_register;
-  return { select_type, Shop_name, name, phone_number, address, email,sidelist: [...sidelist], Shop_register: { ...Shop_register } }
+  const { shop_register } = preparedFinalObject;
+  const { select_type, Shop_name, name, phone_number, address, email, sidelist } = shop_register;
+  return { select_type, Shop_name, name, phone_number, address, email,sidelist: [...sidelist], shop_register: { ...shop_register } }
 
 }
 
