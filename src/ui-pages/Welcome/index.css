@@ -1,0 +1,38 @@
+.root1{
+    width: 100vw;
+    height: 100vh;
+}
+
+.buttonWelcome{
+    background-color: hsl(182deg 91% 27%);
+    width: 35%;
+    height: 20%;
+    border: none;
+    font-size: x-large;
+    color: white;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50%;
+    /* border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%; */
+}
+.welcomeHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: hsl(182deg 91% 27%);
+    font-family: -webkit-pictograph;
+
+}

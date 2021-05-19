@@ -23,7 +23,6 @@ class ButtonComponent extends React.Component {
                 color={color}
                 type={type}
                 defaultValue={value}
-                iconPosition={iconposition}
             >{value} {Icon}</button>
         );
     }
