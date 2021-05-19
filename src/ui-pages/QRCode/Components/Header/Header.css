@@ -1,7 +1,7 @@
 header {
   background-color: rgb(54, 186, 219);
-  padding: 15px;
-  margin-bottom: 12%;
+  padding: 8px;
+  margin-bottom: 8%;
   box-shadow: 0.001em 2px 8px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
@@ -23,5 +23,5 @@ h2 {
 }
 
 header .hamburger {
-   float: right; 
+  float: right;
 }
