@@ -34,6 +34,15 @@ const intialState = {
       email: "",
       sidelist: []
     },
+    shop_register: {
+      select_type: "",
+      shop_name: "",
+      name: "",
+      phone_number: "",
+      address: "",
+      email: "",
+      sidelist: []
+    },
 
     spinner: false,
     selectedLanguage: window.localStorage.getItem("selectedLanguage") || "en"
