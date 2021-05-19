@@ -25,9 +25,18 @@ const intialState = {
       password: "",
       confirmPassword: ""
     },
-    shop_register: {
+    transportregister: {
       select_type: "",
       vehicle_number: "",
+      name: "",
+      phone_number: "",
+      address: "",
+      email: "",
+      sidelist: []
+    },
+    shop_register: {
+      select_type: "",
+      shop_name: "",
       name: "",
       phone_number: "",
       address: "",
