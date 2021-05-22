@@ -1,17 +1,16 @@
 import Header from "./Components/Header/Header";
 import QRCodeGenerator from "./Components/QRCodeGenerator";
-import React, { Component } from "react";
+import React from "react";
 import QRCodeScanner from "./Components/QRCodeScanner";
 import { withRouter } from "react-router-dom";
 import "./index.css";
-import SideNav from "./Components/SideNavPage/SideNav";
 import Footer from "./Components/Footer/Footer";
-import SwitchButton from "./Components/Switch";
 import { useState } from "react";
+import { mapDispatchToProps } from "../../ui-utils/commons";
+import { connect } from "react-redux";
 
-const QRpage = () => {
+const QRpage = ({ qrcode, setAppData }) => {
   const [sideNavWid, setSideNavWid] = useState("0%");
-  const [switchValue, setSwitchValue] = useState(false);
 
   const sideNavHandler = () => {
     if (sideNavWid === "0%") {
@@ -20,32 +19,26 @@ const QRpage = () => {
       setSideNavWid("0%");
     }
   };
-
-  const switchValueHandler = (value) => {
-    setSwitchValue(value);
-  };
-
   return (
     <div>
-      {!switchValue && (
-        <div>
-          <Header nav={sideNavHandler} text={"Your QR Code"} />
-          <QRCodeGenerator />
-          <SwitchButton switch={switchValueHandler} />
-          <SideNav className="sidenav" wid={sideNavWid} />
-          <Footer />
-        </div>
-      )}
-      {switchValue && (
+      {qrcode.isScannerEnabled ? (
         <div>
           <Header nav={sideNavHandler} text={"Scan QR Code"} />
           <QRCodeScanner />
-          <SideNav className="sidenav" wid={sideNavWid} />
+          {/* <SideNav className="sidenav" wid={sideNavWid} /> */}
           <Footer />
         </div>
-      )}
+      ) : <div>
+        <Header nav={sideNavHandler} text={"Your QR Code"} />
+        <QRCodeGenerator />
+        <Footer />
+      </div>}
     </div>
   );
 };
-
-export default withRouter(QRpage);
+const mapStateToProps = ({ screenConfiguration }) => {
+  const { preparedFinalObject = {} } = screenConfiguration;
+  const { qrcode } = preparedFinalObject;
+  return { qrcode: { ...qrcode } }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter((QRpage)));

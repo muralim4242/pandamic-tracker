@@ -44,7 +44,10 @@ const intialState = {
       email: "",
       sidelist: []
     },
-
+    qrcode:{
+      data:null,
+      isScannerEnabled:false
+    },
     spinner: false,
     selectedLanguage: window.localStorage.getItem("selectedLanguage") || "en"
   },

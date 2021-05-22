@@ -9,9 +9,7 @@ class ButtonComponent extends React.Component {
             variant,
             handleonclick,
             type,
-            Icon,
-            iconposition,
-            ...rest
+            Icon
         }
 
             = this.props;

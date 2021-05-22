@@ -14,7 +14,7 @@ class Welcome extends React.Component{
         this.props.history.push("./register");
     }
     render(){
-        const { classes} = this.props;
+       
         return(
             <div className="root1">
                 <ButtonComponent
