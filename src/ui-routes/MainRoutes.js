@@ -33,12 +33,12 @@ const QRPage = Loadable({
 const MainRoutes = () => {
   return (
     <div>
+      <Route exact path="/" component={Welcome} />
       <Route path="/user-home" component={Landing} />
-      <Route path="/Welcome" component={Welcome} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
       <Route path="/qrcode" component={QRPage} />
-      <Redirect to="/qrcode" />
+      <Redirect to="/" />
     </div>
   );
 };

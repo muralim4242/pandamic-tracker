@@ -7,56 +7,65 @@ import { mapDispatchToProps } from "../../../ui-utils/commons";
 import "../index.css"
 class QRCodeScanner extends Component {
   state = {
-    result: "No result",
-    videoOn: false,
-    cameraOn: true,
-    dataError: false
+    dataError: false,
+    qrScanFailed: false
   };
 
   handleScan = async (data) => {
-    console.log({ data });
+    const { qrcode } = this.props;
     if (data) {
-      this.setState({
-        result: data,
-      });
       this.props.setAppData("qrcode", {
         data: data,
         isScannerEnabled: true
       })
       const video = document.querySelector('video');
-
       // A video's MediaStream object is available through its srcObject attribute
       const mediaStream = video.srcObject;
-
       // Through the MediaStream, you can get the MediaStreamTracks with getTracks():
       const tracks = mediaStream.getTracks();
-
       // Tracks are returned as an array, so if you know you only have one, you can stop it with: 
       tracks[0].stop();
-      this.setState({ cameraOn: false });
       // Or stop all like so:
-      tracks.forEach(track => track.stop())
+      tracks.forEach(track => track.stop());
     }
+    setTimeout(function () {
+      if (!qrcode.data) {
+        const video = document.querySelector('video');
+        if (video) {
+          const mediaStream = video.srcObject;
+          const tracks = mediaStream.getTracks();
+          tracks[0].stop();
+          tracks.forEach(track => track.stop());
+          this.setState({ dataError: true, qrScanFailed: true });
+        }
+      }
+    }.bind(this), 5000);
   };
   handleError = (err) => {
-    console.error({ err });
+    const { qrcode } = this.props;
     this.props.setAppData("qrcode", {
       data: null,
       isScannerEnabled: true
     })
-    this.setState({ cameraOn: false });
-    this.setState({ dataError:  true});
+    this.setState({ dataError: true, qrScanFailed: true });
+    setTimeout(function () {
+      if (!qrcode.data) {
+        const video = document.querySelector('video');
+        const mediaStream = video.srcObject;
+        const tracks = mediaStream.getTracks();
+        tracks[0].stop();
+        tracks.forEach(track => track.stop());
+        this.setState({ dataError: true, qrScanFailed: true });
+      }
+    }.bind(this), 10000);
   };
 
-  // setTimeout(() => {
-    
-  // }, 10000);
-
   render() {
-    const { qrcode } = this.props;
+    const { qrcode, setAppData } = this.props;
     return (
       <div >
         <div className="qr-scan">
+          {this.state.qrScanFailed && <div className={"qrcodeerrorMessage"}>Not Scanning Properly,To add Address Please Fill below</div>}
           <QrReader
             css={"qr-reader"}
             delay={300}
@@ -65,29 +74,21 @@ class QRCodeScanner extends Component {
             style={{ width: "100%" }}
           />
         </div>
-
         <div className="qr-scandiv">
-
-        
-            {!this.state.dataError  ?  (
+          {!this.state.dataError ? (
             <TextFieldComponent
               rootCss={"qr-textfield"}
-              value={qrcode.data}
+              fieldValue={qrcode.data}
+              isDisabled={true}
               placeholder={"Add Address(In case of no QRcode)"}
-            // handleChange={props.qrCodeData}
+              handleChange={(e) => { setAppData("qrcode.text", '') }}
             />)
-    
-          :
-          
-           // (!this.state.cameraOn &&  qrcode.data ===null) &&
+            :
             <ButtonComponent
               rootCss={"qr-button"}
               value={"Add Address(In case of no QRcode)"}
             />
-            }
-
-
-
+          }
         </div>
       </div>
     );

@@ -2,7 +2,6 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { mapDispatchToProps } from "../../ui-utils/commons";
-import InputField from "../../ui-atoms/InputField";
 import ButtonComponent from "../../ui-atoms/ButtonComponent";
 import './index.css';
 import TextFieldComponent from "../../ui-atoms/TextFieldComponent";

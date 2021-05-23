@@ -23,6 +23,7 @@ class TextFieldComponent extends React.Component {
             minlength,
             hasButton,
             handleOnClick,
+            isDisabled,
             ...rest
         } = this.props;
         return (
@@ -33,13 +34,13 @@ class TextFieldComponent extends React.Component {
                     type={
                         type === "password" ? (this.showPassword ? "text" : "password") : type
                     }
-                    value={fieldValue}
+                    value={fieldValue || ""}
                     onChange={handleChange}
                     placeholder={placeholder}
+                    disabled={isDisabled}
                     fullwidth={fullwidth}
                     className={rootCss}
                     autoComplete={'false'}
-                    iconPosition={iconPosition}
                     maxLength={maxlength}
                     minLength={minlength}
                     {...rest}

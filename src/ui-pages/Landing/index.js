@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
-import { AppBar, Toolbar, Grid } from "@material-ui/core";
+import { AppBar, Toolbar } from "@material-ui/core";
 import Router from "../../ui-routes/UserRoutes";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
@@ -38,20 +38,19 @@ const styles = {
 };
 
 class Landing extends React.Component {
-  
+
   // Configure FirebaseUI.
 
   render() {
     const {
       classes,
-      appbarName,
-      setAppData
+      appbarName
     } = this.props;
     return (
       <div className={classes.dialogRoot}>
         <AppBar position="static" classes={{ root: classes.appBar }}>
           <Toolbar classes={{ root: classes.toolbar }}>
-            <Typography variant="h4" className={classes.title} style={{ cursor: "pointer" , color: "white"}}>
+            <Typography variant="h4" className={classes.title} style={{ cursor: "pointer", color: "white" }}>
               {appbarName}
             </Typography>
           </Toolbar>

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  margin: 32px 0px;
   flex-direction: column;
 }
 
@@ -11,20 +11,19 @@
 }
 
 .qr-scan {
-  width: 30%;
   margin: 0 auto;
   box-shadow:0;
 }
 .qr-textfield{
-  width: 100%;
   height: 50px;
   box-shadow: 0 8px 12px 0 rgb(0 0 0 / 10%);
-  border: 1px solid #000;
+  outline: #a9a9a9 auto 1px;
   text-align: center;
   font-size: larger;
+  cursor: pointer;
 }
 .qr-textfield:focus-visible{
-  outline: 1px solid #000;
+  outline: #0f7c8a auto 2px;
 }
 .qr-button{
   width: 100%;
@@ -34,12 +33,12 @@
   text-align: center;
   font-size: larger;
   cursor: pointer ;
-  background-color: #3dd3f1;
+  background-color: #0f7c8a;
   color: white;
 }
 .switch-pos{
   position: relative;
-  top: 100px;
+  top: 40px;
 }
 .qr-scandiv{
 width: 100%;
@@ -47,4 +46,18 @@ margin: 32px 0px;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+.qrcodeerrorMessage{
+  display: block;
+  border: 2px solid red;
+  background-color: red;
+  color: #fff;
+  height: 40px;
+  position: absolute;
+  top: 30%;
+  z-index: 1001;
+  box-shadow: 0px 5px 9px -4px rgb(0 0 0 / 10%), 0px 5px 9px -4px rgb(0 0 0 / 20%), 0px 5px 9px -4px rgb(0 0 0 / 3%);
+  width: 95%;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

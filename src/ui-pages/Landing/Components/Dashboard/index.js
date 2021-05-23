@@ -40,7 +40,7 @@ class Dashboard extends React.Component {
   }
 
   ShopOpen = () =>{
-    this.props.history.push('/user-home/transport-register');
+    this.props.history.push('/user-home/shop-register');
   }
 
   HealthCenterOpen = () =>{

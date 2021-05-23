@@ -4,37 +4,50 @@ import React from "react";
 import QRCodeScanner from "./Components/QRCodeScanner";
 import { withRouter } from "react-router-dom";
 import "./index.css";
-import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
 import { mapDispatchToProps } from "../../ui-utils/commons";
 import { connect } from "react-redux";
-import SideNav from "./Components/SideNavPage/SideNav";
+import Sidebar from "../../ui-atoms/SideBarComponent";
+import SwitchButton from "./Components/Switch";
 
 const QRpage = ({ qrcode, setAppData }) => {
-  const [sideNavWid, setSideNavWid] = useState("0%");
-
+  // const [sideNavWid, setSideNavWid] = useState("0%");
+  const [show, setShow] = useState(false);
   const sideNavHandler = () => {
-    if (sideNavWid === "0%") {
-      setSideNavWid("25%");
-    } else {
-      setSideNavWid("0%");
-    }
+    setShow(true);
+    // if (sideNavWid === "0%") {
+    //   setSideNavWid("50%");
+    // } else {
+    //   setSideNavWid("0%");
+    // }
   };
+  const switchValueHandler = (value) => {
+    setAppData("qrcode.isScannerEnabled", value);
+  };
+  const closeSideBar = () => {
+    setShow(false);
+  }
   return (
     <div>
+      <Sidebar
+        show={show}
+        sidelist={[]}
+        onClose={closeSideBar}
+        // handleClickItem={this.handleClickItem}
+        header={"Name of the User"}
+      />
       {qrcode.isScannerEnabled ? (
         <div>
           <Header nav={sideNavHandler} text={"Scan QR Code"} />
           <QRCodeScanner />
-           <SideNav className="sidenav" wid={sideNavWid} /> 
-          <Footer />
         </div>
       ) : <div>
         <Header nav={sideNavHandler} text={"Your QR Code"} />
         <QRCodeGenerator />
-        <SideNav className="sidenav" wid={sideNavWid} /> 
-        <Footer />
       </div>}
+      <div className="switch-pos">
+        <SwitchButton handleChange={switchValueHandler} />
+      </div>
     </div>
   );
 };
