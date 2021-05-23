@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
 import { mapDispatchToProps } from "../../ui-utils/commons";
 import { connect } from "react-redux";
+import SideNav from "./Components/SideNavPage/SideNav";
 
 const QRpage = ({ qrcode, setAppData }) => {
   const [sideNavWid, setSideNavWid] = useState("0%");
@@ -25,12 +26,13 @@ const QRpage = ({ qrcode, setAppData }) => {
         <div>
           <Header nav={sideNavHandler} text={"Scan QR Code"} />
           <QRCodeScanner />
-          {/* <SideNav className="sidenav" wid={sideNavWid} /> */}
+           <SideNav className="sidenav" wid={sideNavWid} /> 
           <Footer />
         </div>
       ) : <div>
         <Header nav={sideNavHandler} text={"Your QR Code"} />
         <QRCodeGenerator />
+        <SideNav className="sidenav" wid={sideNavWid} /> 
         <Footer />
       </div>}
     </div>
