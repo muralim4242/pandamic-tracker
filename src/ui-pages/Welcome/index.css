@@ -1,0 +1,33 @@
+.root1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttonWelcome{
+    background-color: hsl(182deg 91% 27%);
+    width: 150px;
+    height: 150px;
+    border: none;
+    font-size: x-large;
+    color: white;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 10px 25px -4px rgb(0 0 0 / 50%);
+    border-radius: 50%;
+}
+.welcomeHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    color: hsl(182deg 91% 27%);
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}

@@ -1,4 +1,3 @@
-import { TextField } from '@material-ui/core';
 import React from 'react';
 import './index.css';
 
@@ -34,13 +33,12 @@ class InputField extends React.Component {
                     type={
                         type === "password" ? (this.showPassword ? "text" : "password") : type
                     }
-                    value={fieldValue}
+                    value={fieldValue || ""}
                     onChange={handleChange}
                     placeholder={placeholder}
                     fullwidth={fullwidth}
                     className={rootCss}
                     autoComplete={'false'}
-                    iconPosition={iconPosition}
                     maxLength={maxlength}
                     minLength={minlength}
                     {...rest}

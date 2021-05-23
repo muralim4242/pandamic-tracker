@@ -1,12 +1,13 @@
 import QRCode from "qrcode.react";
-import React, { Component } from "react";
+import React from "react";
 
-function QRCodeGenerator() {
+function QRCodeGenerator({ setAppData }) {
+
   return (
     <div className="qrdiv">
-      <QRCode value="1234" size={180} />
+      <QRCode value="1234" size={320} />
     </div>
   );
 }
-
 export default QRCodeGenerator;
+

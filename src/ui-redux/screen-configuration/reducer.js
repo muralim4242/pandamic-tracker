@@ -25,6 +25,7 @@ const intialState = {
       password: "",
       confirmPassword: ""
     },
+    
     transportregister: {
       select_type: "",
       vehicle_number: "",
@@ -43,7 +44,10 @@ const intialState = {
       email: "",
       sidelist: []
     },
-
+    qrcode:{
+      data:null,
+      isScannerEnabled:false
+    },
     spinner: false,
     selectedLanguage: window.localStorage.getItem("selectedLanguage") || "en"
   },

@@ -13,7 +13,6 @@ import TrainIcon from '@material-ui/icons/Train';
 import FlightIcon from '@material-ui/icons/Flight';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
-import Select from '@material-ui/core/List';
 
 
 // const sidelist = (
@@ -96,11 +95,12 @@ class TransportRegister extends React.Component {
   }
 
   BackToMenu = () => {
+    this.props.history.push('/user-home/dashboard');
     this.setState({ loader: true });
   }
 
   componentDidMount = () => {
-    this.props.setAppData('dashboard.appbarName', "fill the information");
+    this.props.setAppData('dashboard.appbarName', "Fill Your Information");
     this.props.setAppData('transportregister.sidelist', sidelistdata);
   }
 

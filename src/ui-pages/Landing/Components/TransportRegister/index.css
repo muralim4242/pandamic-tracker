@@ -23,7 +23,11 @@
     margin:10px 0px;
     height: 40px;
     font-size: larger;
-    border: 2px solid #a9a3a3;
+    outline: #a9a3a3 auto 1px;
+}
+.vehiclenumber_textfield:focus-visible{
+    outline: #0f7c8a auto 2px;
+    outline-offset: unset;
 }
 .heading1{
     background-color: #777070;
@@ -45,19 +49,27 @@
     margin: 10px 0px;
     color: black;
     font-size: larger;
-    border: 2px solid #a9a3a3;
+    outline: #a9a3a3 auto 2px;
     padding: 5px
+}
+.contact_input:focus-visible{
+    outline: #0f7c8a auto 2px;
+    outline-offset: unset;
 }
 .selector{
     margin: 10px 0px;
     height: 40px;
     font-size: larger;
-    border: 2px solid #3ea1a5;
+    outline: #a9a3a3 auto 2px;
     color: #3ea1a5  ;
     background-color: white;
     display:flex;
     align-items: center;
     cursor:pointer;
+}
+.selector:focus-visible{
+    outline: #0f7c8a auto 2px;
+    outline-offset: unset;
 }
 .back{
     width: 130px;
@@ -82,11 +94,6 @@
 .submit:hover{
     color: #1769AA;
 }
-/* .sidebar{
-    width:200px;
-    height: 100%;
-    background-color: blue;
-} */
 
 .header{
     background-color: #1F6BA8;

@@ -8,6 +8,11 @@ const Landing = Loadable({
   loading: Loading,
 });
 
+const Welcome = Loadable({
+  loader: () => import("../ui-pages/Welcome"),
+  loading: Loading,
+});
+
 const Login = Loadable({
   loader: () => import("../ui-pages/Login"),
   loading: Loading,
@@ -23,14 +28,17 @@ const QRPage = Loadable({
 });
 
 
+
+
 const MainRoutes = () => {
   return (
     <div>
+      <Route exact path="/" component={Welcome} />
       <Route path="/user-home" component={Landing} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
       <Route path="/qrcode" component={QRPage} />
-      <Redirect to="/register" />
+      <Redirect to="/" />
     </div>
   );
 };

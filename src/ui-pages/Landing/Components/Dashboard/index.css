@@ -1,0 +1,71 @@
+.individualButton{
+    width: 100%;
+    height: 60px;
+    border: 1px solid balck;
+    margin: 16px 0px;
+    font-size: x-large;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #827a7a;
+}
+.individualButton:hover{
+    color: #00BCD4;
+    border: 4px solid #00BCD4;
+    cursor: pointer;
+    
+}
+
+.TransportButton{
+    width: 100%;
+    height: 60px;
+    border: 1px solid balck;
+    margin: 16px 0px;
+    font-size: x-large;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #827a7a;
+}
+
+.TransportButton:hover{
+    color: #00BCD4;
+    border:4px solid #00BCD4;
+    cursor: pointer;
+}
+
+.ShopButton{
+    width: 100%;
+    height: 60px;
+    border: 1px solid balck;
+    margin: 16px 0px;
+    font-size: x-large;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #827a7a;
+}
+.ShopButton:hover{
+    color: #00BCD4;
+    border:4px solid #00BCD4;
+    cursor: pointer;
+}
+
+.HealthButton{
+    width: 100%;
+    height: 60px;
+    border: 1px solid balck;
+    margin: 16px 0px;
+    font-size: x-large;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #827a7a;
+}
+
+.HealthButton:hover{
+    color: #00BCD4;
+    border: 4px solid
+     #00BCD4;
+    cursor: pointer;
+}

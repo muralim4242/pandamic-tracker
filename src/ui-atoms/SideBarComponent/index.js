@@ -4,13 +4,6 @@ import React from 'react';
 import './index.css';
 
 
-
-const styles = {
-    list: {
-        width: 250,
-    }
-};
-
 class SideBar extends React.Component {
     state = {
         left: true,
@@ -24,7 +17,7 @@ class SideBar extends React.Component {
 
 
     render() {
-        const { classes, sidelist, show, onClose, header, handleClickItem } = this.props;
+        const { sidelist, show, onClose, header, handleClickItem } = this.props;
         console.log({ sidelist });
         return (
             <div className="root1">
@@ -52,24 +45,3 @@ class SideBar extends React.Component {
 };
 
 export default SideBar;
-
-
-
-
-
-{/* <List>
-              {['Auto', 'car', 'bus', 'Train', 'plane', 'Truck', 'Van', 'jeep', 'Other Vehicle']
-             // .map((text, index) => (
-            //     <ListItem button key={text}>
-            //         <ListItemIcon>{index[List] = (
-            //                <span class="material-icons"> directions_car</span>,
-            //                <span class="material-icons">
-            //                directions_bus
-            //                </span>
-            //       )
-            //         }</ListItemIcon>
-            //       <ListItemText primary={text} />
-            //     </ListItem>
-            //   ))
-        }
-            </List> */}
