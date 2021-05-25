@@ -2,7 +2,6 @@
   "projects": {
     "default": "pandamic-tracker",
     "staging": "pandamic-tracker",
-    "build": "pandamic-tracker",
-    "pandemic-tracker": "pandemic-tracker-c06cc"
+    "build": "pandamic-tracker"
   }
 }
