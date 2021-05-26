@@ -35,10 +35,10 @@ class Login extends React.Component {
   }
 
   handleLogin = () => {
-    const { userName, password,history } = this.props;
+    const { userName, password, history } = this.props;
     if (this.validateLogin(userName, password)) {
       this.setState({ loader: true });
-      history.push("user-home/transport-register")
+      history.push("/user-home/dashboard")
     }
   }
 
@@ -46,19 +46,26 @@ class Login extends React.Component {
     const {  setAppData, userName, password } = this.props;
     return (
       <div className={"login_root"}>
-        <form  onClick={() => { this.handleLogin() }}>
+        <div>
         <Typography component={"h2"} className={"login_header"}>Login</Typography>
           <TextFieldComponent
-            className="login_textField"
+            rootCss="login_textField"
             icon={<PersonRoundedIcon style={{ fontSize: "44px", color: "#0F4C7C" }} />}
-            iconPosition={"input-icon-right "}
-            type="text"
-            value={userName}
+            iconPosition={"input-icon-right"}
+            type={"text"}
+            handleChange={(e) => { setAppData('login.userName', e.target.value) }}
+            fieldValue={userName}
             hasError={!userName || !this.state.errors.userName ? true : false}
             errorMessage={this.state.errors.userName}
             placeholder={"User Name"}
-            handleChange={(e) => { setAppData('login.userName', e.target.value) }}
-            fullwidth={"true"}
+            // fullwidth={"true"}
+            // rootCss="vehiclenumber_textfield"
+            // fieldValue={vehicle_number}
+            // hasError={!vehicle_number || !this.state.errors.vehicle_number ? true : false}
+            // errorMessage={this.state.errors.vehicle_number}
+            // handleChange={(e) => { setAppData('transportregister.vehicle_number', e.target.value) }}
+            // placeholder={"Vehicle Number"}
+            // type={"text"}
           />
           <TextFieldComponent
             rootCss={"login_textField1"}
@@ -72,15 +79,14 @@ class Login extends React.Component {
             fullwidth={"true"}
             type={"password"}
           />
-          <div>
             <ButtonComponent
               rootCss={"login_button1"}
               value={"Login"}
               color={"blue"}
               type={"submit"}
+              handleonclick={() => { this.handleLogin() }}
             />
           </div>
-        </form>
       </div>
     );
   }

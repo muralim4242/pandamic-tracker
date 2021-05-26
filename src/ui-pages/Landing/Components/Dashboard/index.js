@@ -66,7 +66,7 @@ class Dashboard extends React.Component {
             rootCss="TransportButton"
             variant={"contained"}
             Icon={< DirectionsBusIcon style={{ width:"2em", height:"2em" }} />}
-            value={"Tansport"}
+            value={"Transport"}
             handleonclick={ this.TransportOpen}
           />
           <ButtonComponent

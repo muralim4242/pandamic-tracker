@@ -79,7 +79,7 @@ class TransportRegister extends React.Component {
     }
     if (!email || email === "") {
       formIsValid = false;
-      errors["email"] = "email is invalid"
+      errors["email"] = "email is invalid";
     }
     this.setState({
       errors: errors
