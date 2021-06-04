@@ -2,21 +2,20 @@ var firebase = require('firebase').default;
 
 try {
   var firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    databaseURL: process.env.REACT_APP_DATABASE_URL,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSANGING_SENDER_ID,
-    appId: process.env.REACT_APP_APP_ID,
-    measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+    apiKey: "AIzaSyAIbE8jDyVy7PDi03XoLtbLyB__knkp6Z0",
+    authDomain: "pandamic-tracker-3a504.firebaseapp.com",
+    projectId: "pandamic-tracker-3a504",
+    storageBucket: "pandamic-tracker-3a504.appspot.com",
+    messagingSenderId: "127365444454",
+    appId: "1:127365444454:web:3b010228a026c2e8850ea7",
+    measurementId: "G-GL45KPT2FE"
   };
   firebase.initializeApp(firebaseConfig);
 } catch (e) {
   console.log(e);
 }
 
-var firebaseAuth = firebase.auth;
+var firebaseAuth = firebase.auth();
 var googleAuthProviderId = firebase.auth.GoogleAuthProvider.PROVIDER_ID;
 var phoneAuthProviderID = firebase.auth.PhoneAuthProvider.PROVIDER_ID;
 var facebookAuthProviderId = firebase.auth.FacebookAuthProvider.PROVIDER_ID;
