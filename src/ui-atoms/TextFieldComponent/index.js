@@ -24,10 +24,11 @@ class TextFieldComponent extends React.Component {
             hasButton,
             handleOnClick,
             isDisabled,
+            width,
             ...rest
         } = this.props;
         return (
-            <div className={"input-icons"}>
+            <div className={"input-icons"} style={{width:width}}>
                 <div className={iconPosition}> {hasButton ? 
                 <button className="iconButton"  onClick= {handleOnClick}> {icon}</button> :icon  }</div>
                 <input

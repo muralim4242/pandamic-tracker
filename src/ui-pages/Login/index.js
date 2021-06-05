@@ -61,14 +61,10 @@ class Login extends React.Component {
     const { setAppData, userName, password } = this.props;
     return (
       <div className={"login_root"}>
-        <form
-          onClick={() => {
-            this.handleLogin();
-          }}
-        >
           <Typography component={"h2"} className={"login_header"}>
             Login
           </Typography>
+
           <TextFieldComponent
             className="login_textField"
             icon={
@@ -78,6 +74,7 @@ class Login extends React.Component {
             }
             iconPosition={"input-icon-right "}
             type="text"
+            width="90%"
             value={userName}
             hasError={!userName || !this.state.errors.userName ? true : false}
             errorMessage={this.state.errors.userName}
@@ -93,6 +90,7 @@ class Login extends React.Component {
             icon={
               <LockRoundedIcon style={{ fontSize: "44px", color: "#fff" }} />
             }
+            width="90%"
             iconPosition={"input-icon-left"}
             placeholder={"Password"}
             hasError={!password || !this.state.errors.password ? true : false}
@@ -108,10 +106,10 @@ class Login extends React.Component {
               rootCss={"login_button1"}
               value={"Login"}
               color={"blue"}
+              handleonclick={()=>{this.handleLogin()}}
               type={"submit"}
             />
           </div>
-        </form>
       </div>
     );
   }

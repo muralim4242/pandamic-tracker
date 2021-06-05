@@ -54,7 +54,7 @@ class Register extends React.Component {
   };
 
   handleRegister = () => {
-    const { userName, emailId, phoneNumber, password, confirmPassword } =
+    const { userName, emailId, phoneNumber, password, confirmPassword,setAppData } =
       this.props;
     if (
       this.validateRegister(
@@ -65,7 +65,6 @@ class Register extends React.Component {
         confirmPassword
       )
     ) {
-      console.log(this.props);
       firebaseAuth
         .createUserWithEmailAndPassword(userName, password)
         .then((ref) => {
@@ -77,7 +76,11 @@ class Register extends React.Component {
             errors: error.message,
             loader: false,
           });
-          console.log("error:", error);
+          setAppData("snackbar",{
+            open:true,
+            message:error.message,
+            variant:"error"
+          })
         });
     }
   };

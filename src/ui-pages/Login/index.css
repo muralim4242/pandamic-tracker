@@ -4,6 +4,7 @@
   height: 95vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: #3F8394;
   border-bottom-right-radius: 200px 100px;
@@ -76,7 +77,7 @@
     outline-width: 0;
   }
   .login_button1 {
-    width: 100%;
+    width: 200px;
     background-color: #244C7C;
     border-radius: 300px;
     border: none;
@@ -89,6 +90,7 @@
     font-size: 28px;
     font-weight:600;
     opacity: 0.8;
+
   }
   .login_button1:hover{
       opacity: 1;
