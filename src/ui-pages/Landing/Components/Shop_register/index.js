@@ -10,7 +10,7 @@ import ButtonComponent from "../../../../ui-atoms/ButtonComponent";
 import Sidebar from "../../../../ui-atoms/SideBarComponent";
 
 const sidelistdata = [{ name: "General Store", value: false, hasIcon: false, },
-{ name: "saloon", value: false, hasIcon: false },
+{ name: "Saloon", value: false, hasIcon: false },
 { name: "Milk Dairy", value: false, hasIcon: false},
 { name: "Vegi-market", value: false, hasIcon: false },
 { name: "Electronics Shop", value: false, hasIcon: false },

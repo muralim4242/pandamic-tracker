@@ -143,16 +143,14 @@ class Register extends React.Component {
               className="register_textField2"
               icon={<PhoneIcon style={{ fontSize: "44px", color: "#fff" }} />}
               iconPosition={"input-icon-right "}
-              type="phone"
+              type="number"
               value={phoneNumber}
               hasError={
                 !phoneNumber || !this.state.errors.phoneNumber ? true : false
               }
               errorMessage={this.state.errors.phoneNumber}
-              placeholder={"phone Number"}
-              handleChange={(e) => {
-                setAppData("signup.phoneNumber", e.target.value);
-              }}
+              placeholder={"Phone Number"}
+              handleChange={(e) => { setAppData('signup.phoneNumber', e.target.value) }}
               fullwidth={"true"}
               maxLength={10}
               minlength={10}
