@@ -35,7 +35,7 @@ class Login extends React.Component {
   };
 
   handleLogin = () => {
-    const { userName, password, history } = this.props;
+    const { userName, password, history,setAppData} = this.props;
     if (this.validateLogin(userName, password)) {
       firebaseAuth
         .signInWithEmailAndPassword(userName, password)
@@ -48,6 +48,11 @@ class Login extends React.Component {
             errors: error.message,
             loader: false,
           });
+          setAppData("snackbar",{
+            open:true,
+            message:error.message,
+            variant:"error"
+          })
         });
     }
   };
