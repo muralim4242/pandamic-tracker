@@ -22,11 +22,6 @@ const Register = Loadable({
   loading: Loading,
 });
 
-const QRPage = Loadable({
-  loader: () => import("../ui-pages/QRCode"),
-  loading: Loading,
-});
-
 
 
 
@@ -37,7 +32,6 @@ const MainRoutes = () => {
       <Route path="/user-home" component={Landing} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
-      <Route path="/qrcode" component={QRPage} />
       <Redirect to="/" />
     </div>
   );

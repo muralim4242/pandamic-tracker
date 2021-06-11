@@ -117,3 +117,11 @@
 .listitem:hover{
     background-color: #52ADF2;
 }
+
+.DialogComponent{
+    padding:left;
+    align-self: center;
+    background-color:transparent;
+    justify-content: center;
+
+}

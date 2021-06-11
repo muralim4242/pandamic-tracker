@@ -23,7 +23,7 @@ const UserRoutes = () => {
     <div>
       <Route path="/user-home/dashboard" component={Dashboard} />
       <Route path="/user-home/transport-register" component={TransportRegister} />
-      <Route path="/user-home/shop-register" component={Shop_register} />
+      <Route path="/user-home/shop_register" component={Shop_register} />
 
     </div>
   );

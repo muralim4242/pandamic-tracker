@@ -8,6 +8,8 @@ import InputField from "../../../../ui-atoms/InputField/index";
 import DoubleArrowRoundedIcon from '@material-ui/icons/DoubleArrowRounded';
 import ButtonComponent from "../../../../ui-atoms/ButtonComponent";
 import Sidebar from "../../../../ui-atoms/SideBarComponent";
+import { useState } from "react";
+import DialogComponent from "../../../../ui-atoms/DialogComponent/index";
 
 const sidelistdata = [{ name: "General Store", value: false, hasIcon: false, },
 { name: "Saloon", value: false, hasIcon: false },
@@ -23,13 +25,15 @@ const sidelistdata = [{ name: "General Store", value: false, hasIcon: false, },
 
 
 class Shop_register extends React.Component {
+  
   state = {
     errors: {},
     loader: true,
     show: false,
     onClose: false,
-
+    isOpen:false
   }
+
   validateRigister = (select_type, Shop_name, name, phone_number, address, email) => {
     let formIsValid = true;
     let errors = {};
@@ -62,6 +66,8 @@ class Shop_register extends React.Component {
     });
     return formIsValid;
   }
+
+  
 
   SuccessfullyAdded = () => {
     const { select_type, Shop_name, name, phone_number, address, email } = this.props;
@@ -198,9 +204,14 @@ class Shop_register extends React.Component {
           <ButtonComponent
             rootCss={"submit"}
             value={"submit"}
-            handleonclick={() => { this.SuccessfullyAdded() }}
+            handleonclick={(e) => this.setState({isOpen : true })}
             type={submit}
           />
+          <DialogComponent className={"DialogComponent"} 
+               isOpen={this.state.isOpen} 
+               onClose={(e) => this.setState({ isOpen: false })}>
+              Account created successfully
+          </DialogComponent>
         </div>
 
       </div>
